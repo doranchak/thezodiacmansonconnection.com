@@ -5,10 +5,6 @@ View the live version here:  https://doranchak.github.io/thezodiacmansonconnecti
 
 Pages that still have broken/missing content:  (note: Older snapshots of some pages still show working images)
 * https://doranchak.github.io/thezodiacmansonconnection.com/1969-10-13_sfpd_wanted_poster.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/1970-10-05_postcard.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/1971-03-22_postcard.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/1971-04-02_letter_to_fbi.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/1974_christmas_card.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/2008_manson_letter_to_ava_editor.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/Howard_Davis_VSA_test.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/anaheim_riverside.html
@@ -21,7 +17,6 @@ Pages that still have broken/missing content:  (note: Older snapshots of some pa
 * https://doranchak.github.io/thezodiacmansonconnection.com/cm_ava_letter_to_editor.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/coroners_report_roberts.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/crockett_merrick.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/davis_handwriting.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/ferrin_mageau_related.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/guest_book_signature.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/howard_davis_notarized_statement.html
