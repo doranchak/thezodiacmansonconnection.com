@@ -1,0 +1,866 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>TZMC - Bruce Davis' 1980s Retrial Attempts</TITLE>
+<SCRIPT language=JavaScript>
+<!-- http://www.spacegun.co.uk -->
+	var message = "Right-click is disabled. The information on this site is Copyright © 1987-2012."; 
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
+	document.onmousedown = rtclickcheck;
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+</SCRIPT>
+
+<rule name ="Prevent image hotlinking">
+<match url = ".*\.(gif|jpg|png)$"/>
+<conditions>
+<add input = "{HTTP_REFERER}" pattern = "^$" negate = "true" />
+<add input = "{HTTP_REFERER}" pattern = "^https?://www\.mydomain\.com/.*$" negate = "true" />
+</conditions>
+<action type = "Rewrite" url = "/images/icons/hotlinks.jpg" />
+</rule>
+
+<META 
+content="Find out the shocking truth behind the murders of the Zodiac serial killer, as Howard A. Davis, Ph.D. reveals the Charles Manson family connection.  Discover the reality behind the gruesome murders in the 1960's" 
+name=description>
+<META 
+content="Zodiac,killer,killings,murders,murder,serial killer,homicide,homicidal,crime,criminal,mass murders,mass murdering,mystery,unsolved crime,unsolved murder,unsolved mystery,conspiracy,Charles Manson,Manson Family,Charlie Manson,conspiracy theories" 
+name=keywords>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+</HEAD>
+<BODY vLink=#0033CC aLink=#00FF00 link=#FF0000 leftMargin=0 topMargin=0 text="#00FF00" bgcolor="#000000" background="images/code_back.gif" ondragstart="return false" onselectstart="return false">
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="1005" height="100">
+    <tr>
+        <td width="525" bgcolor="#23178C" valign="top" align="left">
+        <a name="Top"></a>
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue1.gif" width="250" height="46"></td>
+        <td width="525" bgcolor="#23178C" valign="top" align="left">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <td width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/manson_eye_3.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <td width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue3.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+  </table>
+</div>
+<DIV align=left>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0 background="images/code_back.gif">
+  <TBODY>
+  <TR>
+    <TD width=209 valign="top">&nbsp;</TD>
+
+    <TD width=591 height="20" valign="top" bgcolor="#000000">
+              <p align="center">&nbsp;</TD></TR>
+  <TR>
+    <TD width=209 valign="top">
+      <div align="right">
+        <table border="0" cellpadding="2" width="165">
+          <tr>
+            <td align="right"><a href="index.htm">
+			<img border="0" id="img22" src="buttons/home-button.gif" height="20" width="165" alt="Home" onmouseover="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Home"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="update.html">
+			<img border="0" id="img24" src="buttons/updates-button.gif" height="20" width="165" alt="Updates" onmouseover="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Updates"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="quotes.html">
+			<img border="0" id="img26" src="buttons/quotes-button.gif" height="20" width="165" alt="Quotes" onmouseover="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Quotes"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="intro.html">
+			<img border="0" id="img25" src="buttons/intro-button.gif" height="20" width="165" alt="Introduction" onmouseover="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Introduction"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="name.html">
+			<img border="0" id="img28" src="buttons/name-button.gif" height="20" width="165" alt="What's In A Name" onmouseover="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="What's In A Name"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="victims.html">
+			<img border="0" id="img27" src="buttons/victims-button.gif" height="20" width="165" alt="Victims" onmouseover="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Victims"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="letters.html">
+			<img border="0" id="img29" src="buttons/letters-button.gif" height="20" width="165" alt="Letters And Articles" onmouseover="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Letters And Articles"></a></td>
+          </tr>
+          <tr>
+            <td align="right">
+			<img border="0" id="img10" src="buttons/suspects-red.gif" height="20" width="165" alt="Suspects" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #FF0000; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-img-hover: 0; fp-img-press: 0; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Suspects"></td>
+          </tr>
+          <tr>
+            <td align="right">
+			<p align="center"><a href="manson_family_page.html">
+			<img border="0" id="img30" src="buttons/family_page-button.gif" height="20" width="165" alt="The Manson Family Page" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="The Manson Family Page" onmouseover="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/family_page-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/family_page-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/family_page-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/family_page-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="autopsy_files.html">
+			<img border="0" id="img31" src="buttons/autopsy_files-button.gif" height="20" width="165" alt="Autopsy Files" onmouseover="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/autopsy_files-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/autopsy_files-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/autopsy_files-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/autopsy_files-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Autopsy Files"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="pertinent_info.html">
+			<img border="0" id="img32" src="buttons/pertinent-button.gif" height="20" width="165" alt="Pertinent Information" onmouseover="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/pertinent-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/pertinent-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/pertinent-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/pertinent-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Pertinent Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="about.html">
+			<img border="0" id="img33" src="buttons/about-button.gif" height="20" width="165" alt="About The Author" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="About The Author" onmouseover="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="contact.html">
+			<img border="0" id="img34" src="buttons/contact-button.gif" height="20" width="165" alt="Contact The Author" onmouseover="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Contact The Author"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="order.html">
+			<img border="0" id="img35" src="buttons/order-button.gif" height="20" width="165" alt="Ordering Information" onmouseover="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ordering Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="links.html">
+			<img border="0" id="img36" src="buttons/links-button.gif" height="20" width="165" alt="Related Site Links" onmouseover="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Related Site Links"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="visitor_info.html">
+			<img border="0" id="img37" src="buttons/visitor_info-button.gif" height="20" width="165" alt="Visitor Information" onmouseover="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Visitor Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="question.html">
+			<img border="0" id="img38" src="buttons/question-button.gif" height="20" width="165" alt="Ask Howard Davis" onmouseover="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ask Howard Davis"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="donation_request.html">
+			<img border="0" id="img39" src="buttons/donation-button.gif" height="20" width="165" alt="Donation Request" onmouseover="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Donation Request"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="for_sale_collectable.html">
+			<img border="0" id="img40" src="buttons/collectors-button.gif" height="20" width="165" alt="Collector's Item For Sale" onmouseover="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Collector's Item For Sale"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<a href="tzmc_website_history.html">
+			<img border="0" id="img41" src="buttons/history_button.gif" height="20" width="165" alt="TZMC Website History" onmouseover="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="TZMC Website History"></a></td>
+          </tr>
+          </table>
+      </div>
+    <p>&nbsp;</TD>
+
+    <TD width=591 height="20" valign="top" bgcolor="#000000">
+              <div align="center">
+				<table border="0" cellpadding="0" width="98%">
+					<tr>
+						<td>
+						<p align="center"><b><font face="Arial" color="#00FFFF">
+						Court documents for Bruce Davis' 1980s attempts for 
+						retrial being rejected</font></b></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933"><span style="mso-bidi-font-size: 10.0pt">
+						T</span></font><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="2" color="#FF9933">hese
+              documents were provided by Bridget Heath, a researcher</font></span></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">Bruce
+              McGregor DAVIS, Petitioner</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">v.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">Paul J. MORRIS, Warden, Respondent.
+              No. 79 0260-R(P)</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">&nbsp;UNITED
+              STATES DISTRICT COURT, CENTRAL DISTRICT OF CALIFORNIA</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">487
+              F. Supp. 651; 1980 U.S. Dist. LEXIS 12277 ~ April 29, 1980</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+              <p class="MsoNormal" style="line-height: 100%"><font color="#FFFFFF">COUNSEL:</font></p></td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">Larry L. Scissors, Los Angeles, 
+						Cal., for petitioner.</font></td>
+					</tr>
+					<tr>
+						<td><font color="#FFFFFF">Howard J.
+              Schwab, Deputy Atty. Gen., Los
+              Angeles, Cal., for respondent.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center">
+						<span style="mso-bidi-font-size: 10.0pt">
+						<font color="#FF9933" face="Arial" size="2">&nbsp;</font></span></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left"><font color="#FFFFFF">OPINIONBY:
+              REAL OPINION: OPINION The Magistrate has filed his report and
+              recommendation pursuant to the provisions of 28 U.S.C. §
+              636(b)(1)(B) and General Order 194 of this Court recommending
+              issuance of the writ requested by petitioner. The Court disagrees
+              with the recommendation and is of the opinion that the petition
+              should be denied. Petitioner was convicted in the Superior Court
+              for Los Angeles County on two counts of violation of California
+              Penal Code § 187 (first degree murder) and one count of violation
+              of California Penal Code
+              § 182.1 (conspiracy to commit murder and robbery). He now
+              challenges the convictions upon the following grounds: 1. Denial
+              of his constitutional right of self-representation.<span style="mso-spacerun: yes">&nbsp;
+              </span>2. Coercion of the jury to return a verdict. 3. Intimation
+              by the trial judge that a guilty verdict should be returned by the
+              jury. 4. Substitution of an alternate juror during deliberations.
+              Grounds 2, 3 and 4 are factually unsupportable by the record of
+              the trial and no violation of the constitutional rights of the
+              defendants is proven upon those grounds. Petitioner contends that
+              he was unconstitutionally denied the right of self-representation
+              guaranteed him by the United States Constitution and expressly
+              held absolute in Faretta v. California, 422 U.S. 806, 95 S. Ct.
+              2525, 45 L. Ed. 2d 562 (1975). Petitioner was tried in 1972 and so
+              the Court must find Faretta (supra) retroactive before petitioner
+              can receive the benefits of that Supreme Court opinion. The
+              California Supreme Court in People v. McDaniel, 16 Cal.3d 156, 545
+              P.2d 843, 127 Cal. Rptr. 467 (1976) eschewed the retroactivity of
+              Faretta. This Court finds no reason to disagree with the searching
+              analysis made by Chief Justice Wright writing for a unanimous
+              court in McDaniel. Petitioner argues that although Faretta may not
+              be held to be retroactive that he is entitled to relief
+              nonetheless because the Ninth Circuit had determined that the
+              right of self-representation was a constitutional right. He relies
+              on Bittaker v. Enomoto, 587 F.2d 400 (9th Cir. 1978) and Walker v.
+              Loggins, 608 F.2d 731 (9th Cir. 1979) to support his contentions.
+              In this regard he reads too much into those decisions. Relying on
+              Arnold v. United States, 414 F.2d 1056 (9th Cir. 1969) and Bayless
+              v. United States, 381 F.2d 67 (9th Cir. 1967) the Court in
+              Bittaker and Loggins (supra) held that a state defendant had a
+              constitutional right to self-representation before the Supreme
+              Court's decision in Faretta. In its reliance on Arnold and Bayless
+              (supra) the Ninth Circuit in Bittaker and Loggins does not clearly
+              define this right as &quot;absolute&quot; and as such California
+              courts were free to make determinations of competing rights of
+              fair trial not addressed to &quot;convenience or efficiency of the
+              trial.&quot; Bittaker (supra) at p. 403, but rather to a
+              fundamental concern that defendants undertaking to represent
+              themselves appreciate the seriousness of the charges and present a
+              meaningful defense in cases involving liberty and possibly even
+              death. This case presents the question classically for the trial
+              judge found only superficial understanding of substantial
+              procedures that would seriously compromise petitioner's defense in
+              a capital case. Fair trial rights can have no less importance in
+              the administration of justice than can the right of
+              self-representation now raised to constitutional dimensions of
+              absolutism in Faretta. n1</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">-
+              - - - - - - - - - - - - - - - - -Footnotes- - - - - - - - - - - -
+              - - - - - -</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left"><font color="#FFFFFF">n1.
+              Indeed, the Ninth Circuit held prior to Faretta in U. S. v.
+              Dujanovic, 486 F.2d 182, 186-87 (9th Cir. 1973) that unruly or
+              obstreperous conduct can well stand as a voluntary relinquishment
+              of the limited constitutional right to proceed pro se. Davis'
+              request for leave to proceed pro se in the context of similar
+              requests by co-defendants Charles Manson and Susan Atkins could
+              well have persuaded the trial judge to deny Davis such leave in an
+              effort to avoid the strong probability of disruption.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">-
+              - - - - - - - - - - - - - - - -End Footnotes- - - - - - - - - - -
+              - - - - - -</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">The
+              trial judge was right. Petitioner's constitutional rights have not
+              been violated by the intervention of Faretta. The petition is
+              denied.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#00FFFF">
+				____________________________</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">Bruce
+              McGregor DAVIS, Petitioner-Appellant</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">v.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">Paul J. MORRIS, Warden,
+              Respondent-Appellee.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">No.
+              80-5695 UNITED STATES COURT OF APPEALS,</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">NINTH CIRCUIT 657 F.2d
+              1104; 1981</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">&nbsp;U.S.
+              App. LEXIS 17224 ~ March 5, 1981, Argued ~ October 1, 1981,&nbsp;Decided</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center">
+				<font color="#FFFFFF">PRIOR HISTORY: </font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">Appeal from the 
+						United States District Court for the Central District of 
+						California.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">COUNSEL:</font></td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">Larry L. Scissors, Los Angeles, 
+						Cal., for petitioner-appellant.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">Howard J. Schwab, Los Angeles, 
+						Cal., for respondent-appellee.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">JUDGES:</font></td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">Before CHAMBERS and HUG, Circuit 
+						Judges, and HENDERSON, n* District Judge. * The 
+						Honorable Thelton E. Henderson, United
+              States District Judge for the Northern District of California,
+              sitting by designation.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">OPINIONBY:
+              CHAMBERS OPINION: Davis was convicted in California in 1972 of two
+              counts of first degree murder and of one count of conspiracy to
+              commit murder and robbery. He was sentenced to concurrent life
+              sentences with the judge's recommendation that he not be released
+              during his lifetime unless the California Adult Authority was
+              convinced that he would not be a danger to the community. We
+              have reviewed the arguments raised by Davis and find them to be
+              unpersuasive. We restrict our discussion to the single issue of
+              his right to represent himself at his trial. When he sought to
+              assert this right at the outset of his trial, after careful and
+              thorough questioning, the judge centered his attention on Davis'
+              ability to conduct his defense so as to preserve his
+              constitutional rights. He then concluded that Davis was not
+              authorized to waive his constitutional right to representation by
+              counsel, a determination that was consistent with California law
+              prior to the United States Supreme Court's decision three years
+              later in Faretta v. California, 422 U.S. 806, 95 S. Ct. 2525, 45
+              L. Ed. 2d 562 (1975). The subject was thereafter renewed but again
+              the trial judge, after questioning Davis, concluded that Davis
+              ought to have the services of an attorney for the effective
+              presentation of his case within constitutional standards then
+              applicable under California law. An appeal was taken to the
+              California court of appeal and Davis' attorney presented a variety
+              of issues, many of them raising claims of error in matters of law,
+              e. g. the denial of motions for change of venue, for the quashing
+              of petit and grand jury panels, for severing of counts; error in
+              the admission of evidence and giving of instructions; a claim of
+              prosecutor misconduct, etc. In a lengthy opinion, the California
+              court of appeal rejected these claims of error and also rejected a
+              claim, made in Davis' reply brief, that he had been denied a
+              federal constitutional right to represent himself under Faretta v.
+              California, which was decided three years after Davis' trial, but
+              while his appeal was pending. The court of appeal's discussion of
+              the Faretta issue consumed less than a half of a page of the
+              extensive, 79-page, typed opinion. The court summarily denied
+              relief on this issue stating that Faretta had recently been held
+              to be non-retroactive by the California Supreme Court in People v.
+              McDaniel, 16 Cal.3d 156, 127 Cal. Rptr. 467, 545 P.2d 843 (1976.)
+              n1 The judgment of conviction was affirmed, the California Supreme
+              Court denied a hearing, and the United States Supreme Court denied
+              certiorari.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">-
+              - - - - - - - - - - - - - - - - -Footnotes- - - - - - - - - - - -
+              - - - - - -</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">n1.
+              The Eighth Circuit agrees with California on this issue. Martin v.
+              Wyrick, 568 F.2d 583 (8th Cir. 1980), cert. den. 435 U.S. 975, 98
+              S. Ct. 1623, 56 L. Ed. 2d 69. Contra: Scott v. Wainwright, 617
+              F.2d 99 (5th Cir. 1980), cert. den. 449 U.S. 885, 101 S. Ct. 240,
+              66 L. Ed. 2d 111. As yet, this circuit has not fully explored the
+              issue. See e.g. Bittaker v. Enomoto, 587 F.2d 400 (9th Cir. 1978).</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">-
+              - - - - - - - - - - - - - - - -End Footnotes- - - - - - - - - - -
+              - - - - - -</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">In
+              January 1979, Davis (again through his attorney) filed an
+              application in federal district court for a writ of habeas corpus.
+              No such application had been made to the state court. He contended
+              that Faretta was retroactive in effect. He also argued, now for
+              the first time, that even if it were not retroactive, the law of
+              this circuit prior to the decision in Faretta had required that he
+              be granted his motion to represent himself. The district judge
+              denied the writ and Davis appealed to this court. 487 F. Supp.
+              651. In determining that Davis was required under California law,
+              then in effect, to have the assistance of counsel, the trial judge
+              obviously considered and articulated those aspects of his inquiry
+              that were relevant to the law that was then in effect. He had
+              little reason to anticipate Faretta and even less reason to
+              anticipate a claim that Faretta would be applied retroactively. On
+              this record, we cannot tell whether the reasons he expressed were
+              the totality of his reasons for refusing to allow Davis to proceed
+              in propria persona. The district judge's opinion, discussing his
+              reasons for denying the writ, focused on the trial judge's
+              thorough questioning of Davis in the light of the complexities of
+              the case, reasons now discarded by Faretta. But his opinion also
+              states: &quot;Davis' request for leave to proceed pro se in the
+              context of similar requests by co-defendants Charles Manson and
+              Susan Atkins could well have persuaded the trial judge to deny
+              Davis such leave in an effort to avoid the strong probability of
+              disruption.” In this circuit, before Faretta, the right to
+              self-representation could be denied if a defendant engaged in, or
+              there was reason to fear, obstructionist or unruly conduct. United
+              States v. Dujanovic, 486 F.2d 182 (9th Cir. 1973). Nothing in
+              Bittaker v. Enomoto, 587 F.2d 400 (9th Cir. 1978), says otherwise,
+              and Justice Stewart's statement in Faretta, is of some importance:
+              &quot;... the trial judge may terminate self-representation by a
+              defendant who deliberately engages in serious and obstructionist
+              misconduct.&quot; 422 U.S. at 834, fn. 46, 95 S. Ct. at 2541, fn.
+              46.The brutality of these murders, the association of Davis with
+              Manson and Atkins, and the widespread publicity about the
+              purportedly bizarre activities of members of the &quot;Manson
+              family,&quot; may have been a concern to the trial judge. We
+              simply have no way of knowing if this was so or if, perhaps, there
+              had been conduct by Davis or by potential witnesses or spectators
+              that might have affected the trial judge's view in denying the
+              motion to proceed in propria persona. The trial judge is still
+              serving actively on the California bench and we believe that we
+              should afford the state the opportunity for a hearing as to the
+              reasons that led him to deny Davis' motions to represent himself.
+              Then probably state relief should be exhausted on the point of
+              Ninth Circuit law, raised here for the first time. Given the state
+              of the record, we believe it would be improper at this time to
+              address the broader constitutional question of the retroactivity
+              of Faretta. Remanded to the district court with the suggestion
+              that it vacate its order denying the writ. Full jurisdiction is
+              back in the district court, and if the petitioner returns to this
+              court, it would be on a new appeal.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#00FFFF">
+				____________________________</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">BRUCE
+              McGREGOR DAVIS, Petitioner and Appellant</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">v.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">PAUL J. MORRIS, 
+						Warden, Respondent and Appellee</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">&nbsp;No. 82-5569 UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
+              719 F.2d 324;</font> <font color="#FFFFFF">1983</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">&nbsp;U.S. App. LEXIS 
+						15757 ~ October 18, 1983, Submitted ~ October 28, 1983, 
+						Decided</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF"> PRIOR HISTORY:</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center">
+              <font color="#FFFFFF">Appeal
+              from the United States District Court for the Central District of
+              California.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF">Manuel L. Real,
+              District</font> <font color="#FFFFFF">Judge,
+              Presiding. DISPOSITION: AFFIRMED.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">COUNSEL:</font></td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">Larry L. Scissors, Esq., Los 
+						Angeles, California, for Appellant/Petitioner.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">Howard Schwab, Esq., Dep. Atty. 
+						Gen., Los Angeles, California, for Appellee/Respondent.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">JUDGES:</font></td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">Chambers and Hug, Circuit Judges, 
+						and Henderson, * District Judge.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<font color="#FFFFFF">*
+              The Honorable Thelton E. Henderson, United States District Judge
+              for the Northern District of California, sitting by designation.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+              <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><font color="#FFFFFF">OPINIONBY: CHAMBERS OPINION:
+              CHAMBERS, Circuit Judge: In Davis v. Morris, 657 F.2d 1104 (9th
+              Cir. 1981), we considered Davis' contention that he had been
+              unlawfully denied the right to represent himself at his murder
+              trial in the California state courts in 1972. The district judge,
+              in his opinion denying a writ of habeas corpus, had stressed
+              evidence of the trial judge's obvious concern for Davis' ability
+              to represent himself competently in this very serious criminal
+              matter. 487 F. Supp. 651 (C.D. Cal. 1980). He also noted that the
+              fear of disruptive activity could well have influenced the trial
+              judge's decision to deny the request to proceed in propria
+              persona. See United States v. Dujanovic, 486 F.2d 182 (9th Cir.
+              1973). As the trial had occurred long before Faretta v.
+              California, 422 U.S. 806, 45 L. Ed. 2d 562, 95 S. Ct. 2525 (1975),
+              had been decided, and as the record suggested a basis for the
+              district judge's evaluation, we remanded the case to the district
+              court to permit a fuller inquiry into the trial judge's reasoning
+              in denying self-representation. Counsel for the parties appeared
+              before the California trial judge, who made a statement of his
+              recollection of the case and of the decision with respect to
+              Davis' motion for self-representation. The judge then invited
+              counsel to ask questions and we detect no limitations in that
+              process. He answered questions and a transcript was prepared of
+              the entire proceedings. On a review of that transcript the
+              district judge again denied the writ on the ground of the
+              petitioner's incompetency to represent himself and also on the
+              ground of the atmosphere of potential disruption. We find no
+              prejudice to the appellant as the result of this manner of
+              proceeding. Rhinehart v. Gunn, 661 F.2d 738 (9th Cir. 1981).
+              Moreover, we have reviewed the transcript of the proceedings
+              before the trial judge and we conclude that in the factual
+              circumstances of this case, there was ample warrant for the denial
+              of Davis' attempt to represent himself both under pre-Faretta and
+              post-Faretta law. The motion for self-representation was made at a
+              time when Davis was a co-defendant with Charles Manson and other
+              members of the so-called &quot;Manson family.&quot; The trial
+              judge described the courtroom appearances of other members of that
+              &quot;family&quot; as spectators, distinctive by their shaved
+              heads and by the markings on their foreheads. Significantly, he
+              remembered: ~ There was a coordination of activity between the
+              Manson people. When Charles Manson did something, they nearly
+              always followed it, so that even Steven Grogan and Susan Atkins,
+              who could hardly put one sentence one after the other, made
+              motions to proceed pro per because Charles Manson did and because
+              Davis followed suit. ~ The trial judge stated that Manson
+              &quot;was inclined to be disruptive of almost any proceeding where
+              he was present.&quot; The close association between the
+              codefendants was definitely in the judge's mind and he was
+              concerned &quot;for the usual and orderly course of a presentation
+              at a trial.&quot; He noted particularly the fact that ~ . . .
+              there was no lack of communication, so far as I was able to hear,
+              between the prisoners. They were all in custody, of course, but
+              they were even allowed to, for the purpose of the trial, associate
+              with each other and to meet from time to time. ~ It was his
+              conclusion that Charles Manson would have been &quot;calling the
+              strategy.&quot; Counsel inquired: You mentioned something before
+              that Charles Manson was sort of calling the shots as to his
+              followers. Based upon this at the time you made the ruling, did
+              you believe that Bruce Davis could make a knowing and intelligent
+              waiver of counsel? ~ The trial judge responded, &quot;I didn't
+              think he could . . . I thought he wasn't acting independently, in
+              any event.&quot; After Davis' case was severed from that of Manson
+              and Atkins, the following statement was made by the court: Very
+              well. The court will take it that the stipulation will prevail as
+              to any pretrial motion, that it is deemed to have been made in
+              this proceeding just as it was in the proceedings -- in the
+              proceeding before this court prior to separation of the defendant
+              for trial. ~ Counsel for the defendant stated: Well, Your Honor,
+              initially, if I may, I would like to incorporate -- incorporate
+              the proceedings had in the prior trial when all the defendants
+              were joined, at which a motion to quash the petit jury venire was
+              made. And the court -- there was at that time certain evidence
+              introduced. There were certain stipulations entered into. I would
+              request that those same matters be deemed presented by way of
+              evidence and the same stipulations stipulated to by both sides. ~
+              It thus appears that no specific motion for self-representation
+              was reasserted at this time. The trial judge stated that, on this
+              record, &quot;I would say -- it would just be guessing and
+              speculating -- that the motion to proceed pro per would not have
+              been considered by me at that time.&quot; The record demonstrates
+              that following the severance of Davis' case from that of the other
+              defendants, evidence of changed circumstances (if any) was not put
+              before the court in sufficient form as to any change of
+              circumstances warranting a reconsideration of the denial of that
+              motion for self-representation. On this record, appellant cannot
+              claim he was improperly denied self-representation after the
+              severance of this case from the others. The representation of
+              Davis on this and the former appeal has been of the highest
+              quality and we commend his attorney. We rest our decision on the
+              factual circumstances of this case, as attested to by the judge
+              who tried it, by the review of the district judge, and by our own
+              review of the record. The writ of habeas corpus was properly
+              denied. Affirmed.</font></span></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+						<a href="pertinent_info.html#Court_docs"><font face="Arial" size="2" color="#00FFFF">Back 
+				to Pertinent Information page</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>
+						<a href="davis.html#Court_docs">
+						<font face="Arial" size="2" color="#00FFFF">Back to 
+						Davis page</font></a></b></span></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </font><a href="#Top"><font face="Arial" size="2" color="#00FFFF">Top
+              of this page</font></a></b></span></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					</table>
+				</div>
+	</TD></TR>
+  </TBODY></TABLE></DIV>
+    
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=7144748; 
+var sc_invisible=1; 
+var sc_security="b6ee11ab"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="hits counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7144748/0/b6ee11ab/1/"
+alt="hits counter" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</BODY></HTML>

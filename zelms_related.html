@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>TZMC - Zelms Related Information</TITLE>
+<SCRIPT language=JavaScript>
+<!-- http://www.spacegun.co.uk -->
+	var message = "Right-click is disabled. The information on this site is Copyright © 1987-2012."; 
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
+	document.onmousedown = rtclickcheck;
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+</SCRIPT>
+
+<rule name ="Prevent image hotlinking">
+<match url = ".*\.(gif|jpg|png)$"/>
+<conditions>
+<add input = "{HTTP_REFERER}" pattern = "^$" negate = "true" />
+<add input = "{HTTP_REFERER}" pattern = "^https?://www\.mydomain\.com/.*$" negate = "true" />
+</conditions>
+<action type = "Rewrite" url = "/images/icons/hotlinks.jpg" />
+</rule>
+
+<META 
+content="Find out the shocking truth behind the murders of the Zodiac serial killer, as Howard A. Davis, Ph.D. reveals the Charles Manson family connection.  Discover the reality behind the gruesome murders in the 1960's" 
+name=description>
+<META 
+content="Zodiac,killer,killings,murders,murder,serial killer,homicide,homicidal,crime,criminal,mass murders,mass murdering,mystery,unsolved crime,unsolved murder,unsolved mystery,conspiracy,Charles Manson,Manson Family,Charlie Manson,conspiracy theories" 
+name=keywords>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+</HEAD>
+<BODY vLink=#0033CC aLink=#00FF00 link=#FF0000 leftMargin=0 topMargin=0 text="#00FF00" bgcolor="#000000" background="images/code_back.gif" ondragstart="return false" onselectstart="return false">
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="1005" height="100">
+    <tr>
+        <td width="525" bgcolor="#23178C" valign="top" align="left">
+        <a name="Top"></a>
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue1.gif" width="250" height="46"></td>
+        <td width="525" bgcolor="#23178C" valign="top" align="left">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <td width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#23178C">
+        <img border="0" src="images/manson_eye_3.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <td width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue3.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+  </table>
+</div>
+<DIV align=left>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0 background="images/code_back.gif">
+  <TBODY>
+  <TR>
+    <TD width=209 valign="top">&nbsp;</TD>
+
+    <TD width=591 height="20" valign="top" bgcolor="#000000">
+              <p align="center">&nbsp;</TD></TR>
+  <TR>
+    <TD width=209 valign="top">
+      <div align="right">
+        <table border="0" cellpadding="2" width="165">
+          <tr>
+            <td align="right"><a href="index.htm">
+			<img border="0" id="img22" src="buttons/home-button.gif" height="20" width="165" alt="Home" onmouseover="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Home"></a></td>
+          </tr>
+          <tr>
+            <td align="right">
+			<p align="center"><a href="update.html">
+			<img border="0" id="img24" src="buttons/updates-button.gif" height="20" width="165" alt="Updates" onmouseover="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Updates"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="quotes.html">
+			<img border="0" id="img26" src="buttons/quotes-button.gif" height="20" width="165" alt="Quotes" onmouseover="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Quotes"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="intro.html">
+			<img border="0" id="img25" src="buttons/intro-button.gif" height="20" width="165" alt="Introduction" onmouseover="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Introduction"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="name.html">
+			<img border="0" id="img28" src="buttons/name-button.gif" height="20" width="165" alt="What's In A Name" onmouseover="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="What's In A Name"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<a href="victims.html">
+			<img border="0" id="img27" src="buttons/victims-button.gif" height="20" width="165" alt="Victims" onmouseover="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Victims"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="letters.html">
+			<img border="0" id="img29" src="buttons/letters-button.gif" height="20" width="165" alt="Letters And Articles" onmouseover="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Letters And Articles"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="suspects.html">
+			<img border="0" id="img30" src="buttons/suspects-button.gif" height="20" width="165" alt="Suspects" onmouseover="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Suspects"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="manson_family_page.html">
+			<img border="0" id="img31" src="buttons/family_page-button.gif" height="20" width="165" alt="The Manson Family Page" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="The Manson Family Page" onmouseover="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="autopsy_files.html">
+			<img border="0" id="img32" src="buttons/autopsy_files-button.gif" height="20" width="165" alt="Autopsy Files" onmouseover="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Autopsy Files"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center">
+			<img border="0" id="img21" src="buttons/pertinent-red.gif" height="20" width="165" alt="Pertinent Information" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #FF0000; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-img-hover: 0; fp-img-press: 0; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Pertinent Information"></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="about.html">
+			<img border="0" id="img33" src="buttons/about-button.gif" height="20" width="165" alt="About The Author" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="About The Author" onmouseover="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="contact.html">
+			<img border="0" id="img34" src="buttons/contact-button.gif" height="20" width="165" alt="Contact The Author" onmouseover="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Contact The Author"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="order.html">
+			<img border="0" id="img35" src="buttons/order-button.gif" height="20" width="165" alt="Ordering Information" onmouseover="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ordering Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="links.html">
+			<img border="0" id="img36" src="buttons/links-button.gif" height="20" width="165" alt="Related Site Links" onmouseover="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Related Site Links"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="visitor_info.html">
+			<img border="0" id="img37" src="buttons/visitor_info-button.gif" height="20" width="165" alt="Visitor Information" onmouseover="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Visitor Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="question.html">
+			<img border="0" id="img38" src="buttons/question-button.gif" height="20" width="165" alt="Ask Howard Davis" onmouseover="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ask Howard Davis"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="donation_request.html">
+			<img border="0" id="img39" src="buttons/donation-button.gif" height="20" width="165" alt="Donation Request" onmouseover="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Donation Request"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="for_sale_collectable.html">
+			<img border="0" id="img40" src="buttons/collectors-button.gif" height="20" width="165" alt="Collector's Item For Sale" onmouseover="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Collector's Item For Sale"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<a href="tzmc_website_history.html">
+			<img border="0" id="img41" src="buttons/history_button.gif" height="20" width="165" alt="TZMC Website History" onmouseover="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="TZMC Website History"></a></td>
+          </tr>
+          </table>
+      </div>
+    <p>&nbsp;</TD>
+
+    <TD width=591 height="20" valign="top" bgcolor="#000000">
+              <div align="center">
+				<table border="0" cellpadding="0" width="550">
+					<tr>
+						<td>
+						<p align="center"><b><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="3" color="#00FFFF">Eric
+              Zelms </font></span><font face="Arial" size="3" color="#00FFFF"><span style="mso-bidi-font-size: 10.0pt">Related
+              Information</span></font></b></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Since the time that researchers began delving into this case it has been hotly debated whether or not two San Francisco police officers talked to Zodiac on the night of 10.11.69 after cab driver Paul Stine was murdered. Zodiac claimed this actually happened in his 11.09.69 letter to the San Francisco
+            <i>Chronicle</i>:</font></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<div align="center">
+							<table border="0" cellpadding="0" width="100%" cellspacing="0">
+								<tr>
+									<td width="177">&nbsp;</td>
+									<td width="188">
+									<font face="Arial" size="2" color="#00FFFF">&quot;p.s. 2 cops pulled a goof abot 3<br>
+            						min after I left the cab. I was<br>
+            walking down the hill to the<br>
+            park when this cop car pulled up<br>
+            &amp; one of them called me over<br>
+            &amp; asked if I saw any one<br>
+            acting supicisous or strange<br>
+            in the last 5 to 10 min &amp; I said<br>
+            yes there was this man who<br>
+            						was running by waveing a gun<br>
+            &amp; the cops peeled rubber &amp;<br>
+            went around the corner as<br>
+            I directed them &amp; I dissap<br>
+            eared into the park a block &amp;<br>
+            a half away never to be seen<br>
+            again.&quot;</font></td>
+									<td width="181">&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">This author has always maintained that the officers
+            (Eric A. Zelms and senior officer Donald A. Fouke) did indeed speak with the Zodiac as he claimed. Eric Zelms was killed in the line of duty only a
+            short time after this encounter. Fouke (who is now retired) on a television show about the Zodiac has maintained that as they were searching for a Black Male Adult (as per the All Points Bulletin) they passed by a White Male Adult walking down the street. He said that for five to ten seconds he took note of this person's appearance.</font></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">In a memo dated
+            11.12.69
+            (after both the 10.13.69 Zodiac letter with Paul Stine's blood stained shirt in
+            it and the above 11.09.69 Zodiac letter had arrived) Fouke wrote:</font></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<div align="center">
+							<table border="0" cellpadding="0" width="100%">
+								<tr>
+									<td>&nbsp;</td>
+									<td width="454"><font color="#FFFFFF" size="2" face="Arial">&quot;Sir:
+                    I respectfully wish to report the following, that while
+                    responding to the area of Cherry and Washington Streets a
+                    suspect fitting the description of the Zodiac killer was
+                    observed by officer Fouke walking in an easterly direction
+                    on Jackson street and then turn north on Maple street. This
+                    subject was not stopped as the description received from
+                    communications was that of a Negro male. When the right
+                    description was broadcast reporting officer informed
+                    communications that a possible suspect had been seen going
+                    north on Maple Street into the Presidio, the area of Julius
+                    Kahn playground and a search was started which had negative
+                    results. The suspect that was observed by officer Fouke was
+                    a WMA 35-45 Yrs about five-foot, ten inches, 180-200 pounds.
+                    Medium heavy build - Barrel chested - Medium complexion -
+                    Light-colored hair possibly greying in rear (May have been
+                    lighting that caused this effect.) Crew cut - wearing
+                    glasses - Dressed in dark blue waist length zipper type
+                    jacket (Navy or royal blue) Elastic cuffs and waist band
+                    zipped part way up. Brown wool pants pleeted [sic] type baggy in
+                    rear (Rust brown) May have been wearing low cut shoes.
+                    Subject at no time appeared to be in a hurry walking with a
+                    shuffling lope, Slightly bent forward. The subjects general
+                    appearance - Welsh ancestry. My partner that night was
+                    officer E. Zelms #1348 of Richmond station. I do not know if
+                    he observed this subject or not. Respectfully submitted.
+                    Donald A. Fouke, Patrolman, Star 847.&quot;</font></td>
+									<td width="42">&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="1" color="#00FFFF">Thanks
+            go to author Robert Graysmith for locating<i> </i>the above memo and
+            publishing it in his book <i>Zodiac Unmasked</i>.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Hence the debate. Was Zodiac's written account of speaking to the officers a lie? Is Fouke's story accurate? Or was there a cover-up?</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">On the archived portion of the message board at ZodiacKiller.com from the year 2002, a poster, Ray N asks a reasonable question: Why hasn't Eric Zelms' widow been asked if he ever told her whether or not he and/or Fouke spoke to Zodiac? Since 1987 it has been the author's desire to find either Zelms' widow or a family member who could possibly clear up this
+            long-lived mystery.</font></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><i>
+						<font face="Arial" size="2" color="#00FFFF">
+						_________________________________</font></i></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Thankfully, during the week of August 15, 2005, I was able to have an interview with Zelms' widow,
+            Diana. The following will be a brief summary of the graciously given information.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Diana
+            said that Eric closely followed the Stine murder on television. He told her that when he and Fouke saw a WMA they quickly decided to question him.
+            He said that they spoke to this man "face to face!" The man was polite, calm and answered all of their questions. There was nothing suspicious about him. They then quickly left to continue their search for a BMA as had been broadcast in the APB.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Officer Zelms confessed to his wife that when they realized the man they had talked to
+            </font><font face="Arial" size="2" color="#00FFFF"> was</font><font face="Arial" size="2" color="#FF9933"> the Zodiac they absolutely did not know what to say or do. They understood what the full ramifications would be if it became known that San Francisco police officers had confronted but failed to capture the Zodiac Killer! She was told, in all confidence, that Fouke made the final decision to say they only drove by a WMA and he was not stopped because they were looking for a BMA.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">It would seem that Fouke knew that he and Zelms had spoken to Zodiac "face to face" and he wanted to protect a rookie officer.
+            It would be quite unthinkable that the senior officer did not know
+            if his partner had seen the WMA as Fouke wrote in his memo and has
+            said in some interviews. Zelms admitted to his wife in private that he cooperated with Fouke because he didn't want to get a negative report and possibly lose his job. In light of the heavy criticism from some quarters about the failure of the
+            SFPD to capture the Zodiac, if what had happened were to get out the effects would have been devastating.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Robert Graysmith in his book
+            <i> Zodiac</i> writes, "The two patrolmen were shattered and filled with
+            despair.&quot; In his book <i> Zodiac Unmasked</i> Graysmith says that detective George Balwart interviewed Fouke in the 1990s. Fouke "wasn't real happy about being interviewed.&quot;
+            And the sighting of Zodiac &quot;was not the high point of his career and he didn't want to talk about it. Who could blame him?"</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Retired detective Dave Toschi is quoted as saying to Graysmith that
+            they (SFPD) &quot;felt that Zelms and Fouke had stopped Zodiac, and did everything we could to keep it quiet so they wouldn't be hurt by the police commission or embarrassed." Toschi said that Fouke said, in tears, "it was the guy," and that they had both officers "do a sketch."</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Former detective John Lynch, who worked the Zodiac case in Vallejo said in the same Graysmith book that "when they (Fouke and Zelms) were talking to him (Zodiac) a call came on the radio . . . to look for a . . . black man and they let this guy go . . . you can almost bet your boots the cops came out of that squad car with their guns in their hands. You'd have to." Lynch believed that they waited so long to tell the
+            Chief because they were very upset over the incident.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">The late Police Reporter and Zodiac Expert, Dave Peterson, told the author that he thought Zodiac did speak to the officers or that is what he had learned. He was the reporter that had the "scoop" on this story. The
+            SFPD denied then, and still does to this very day, that any of it's officers ever spoke to Zodiac.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Zelms did not indicate that he or his partner saw any blood stains on the man they questioned. This raises some questions about just how much blood was on Zodiac. Fouke did say that the man's jacket looked "dirty" and in his 11.12.69 memo he describes the man as wearing rust colored pants. Perhaps the clothing did not show any blood stains. Then again it was night time and the officers were in a hurry.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Zelms
+            also mentioned to his wife that Zodiac appeared quite ordinary in
+            size and stature. He was not physically imposing enough to stand out
+            in any way.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933">Diana
+            said that privately her husband was deeply distressed about the entire matter. He carried the Zodiac composite with
+            him, which was a good resemblance of the man he spoke to, in case he ever saw him again.
+            He admitted to her that when he realized he had spoken to the Zodiac Killer "face to face" he became filled with fear. He realized then how close he had come to death. Young Eric Zelms did not know that the grim reaper was
+            less than three months away. He was shot three times at around 1 AM
+            on New Years Day 1970 and died a hero leaving a young widow, an infant son and family to grieve his passing.</font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center">
+						<img border="0" src="images/d_zelms_email.png" width="544" height="236"></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><i>
+						<font face="Arial" size="2" color="#00FFFF">
+						_________________________________</font></i></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933"><b>Here
+            is a letter to Howard Davis from Sandra Betts</b></font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center">
+						<img border="0" src="images/Betts_affidavit.jpg" width="560" height="703"></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><i>
+						<font face="Arial" size="2" color="#00FFFF">
+						_________________________________</font></i></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial" size="2" color="#FF9933"><b>
+						Here is a link to a very good and complete article about 
+						Officer Zelms that was in the June 1970 issue of <i>
+						Official Detective Stories</i> magazine. It is posted on 
+						ZodiacKiller.com.</b></font></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><b><font size="2" color="#00FFFF">
+						<a href="http://zodiackiller.fr.yuku.com/topic/6808?page=1#.UQGJ5fJWSVs">
+						<font color="#00FFFF" face="sans-serif">Dragnet for the 
+						Killers of a Hero Rookie Cop</font></a></font></b></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><a href="pertinent_info.html#Zelms"><font face="Arial" size="2" color="#00FFFF">Back</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </font></b><a href="#Top">
+						<font face="Arial" size="2" color="#00FFFF"><b>Top
+              of page</b></font></a></span></td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+					</tr>
+					</table>
+				</div>
+	</TD></TR>
+  </TBODY></TABLE></DIV>
+    
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=7144748; 
+var sc_invisible=1; 
+var sc_security="b6ee11ab"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="hits counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7144748/0/b6ee11ab/1/"
+alt="hits counter" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</BODY></HTML>

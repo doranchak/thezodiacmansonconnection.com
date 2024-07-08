@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>TZMC - Victims Page</TITLE>
+<SCRIPT language=JavaScript>
+<!-- http://www.spacegun.co.uk -->
+	var message = "Right-click is disabled. The information on this site is Copyright © 1987-2012."; 
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
+	document.onmousedown = rtclickcheck;
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+</SCRIPT>
+
+<rule name ="Prevent image hotlinking">
+<match url = ".*\.(gif|jpg|png)$"/>
+<conditions>
+<add input = "{HTTP_REFERER}" pattern = "^$" negate = "true" />
+<add input = "{HTTP_REFERER}" pattern = "^https?://www\.mydomain\.com/.*$" negate = "true" />
+</conditions>
+<action type = "Rewrite" url = "/images/icons/hotlinks.jpg" />
+</rule>
+
+<META 
+content="Find out the shocking truth behind the murders of the Zodiac serial killer, as Howard A. Davis, Ph.D. reveals the Charles Manson family connection.  Discover the reality behind the gruesome murders in the 1960's" 
+name=description>
+<META 
+content="Zodiac,killer,killings,murders,murder,serial killer,homicide,homicidal,crime,criminal,mass murders,mass murdering,mystery,unsolved crime,unsolved murder,unsolved mystery,conspiracy,Charles Manson,Manson Family,Charlie Manson,conspiracy theories" 
+name=keywords>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+</HEAD>
+<BODY vLink=#0033CC aLink=#00FF00 link=#FF0000 leftMargin=0 topMargin=0 text="#00FF00" bgcolor="#000000" background="images/code_back.gif" ondragstart="return false" onselectstart="return false">
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="1005" height="100">
+    <tr>
+        <td width="525" bgcolor="#23178C" valign="top" align="left">
+        <a name="Top"></a>
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue1.gif" width="250" height="46"></td>
+        <td width="525" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <td width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/manson_eye.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <td width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue3.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+  </table>
+</div>
+<DIV align=left>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0 background="images/code_back.gif">
+  <TBODY>
+  <TR>
+    <TD width=209 valign="top"></TD>
+    
+    <TD width=591 height="20" valign="top" bgcolor="#000000">&nbsp;</TD></TR>
+  <TR>
+    <TD width=209 valign="top">
+      <div align="right">
+        <table border="0" cellpadding="2" width="165">
+          <tr>
+            <td align="right"><a href="index.htm">
+			<img border="0" id="img22" src="buttons/home-button.gif" height="20" width="165" alt="Home" onmouseover="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Home"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="update.html">
+			<img border="0" id="img24" src="buttons/updates-button.gif" height="20" width="165" alt="Updates" onmouseover="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Updates"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="quotes.html">
+			<img border="0" id="img43" src="buttons/quotes-button.gif" height="20" width="165" alt="Quotes" onmouseover="FP_swapImg(0,0,/*id*/'img43',/*url*/'buttons/quotes-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img43',/*url*/'buttons/quotes-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img43',/*url*/'buttons/quotes-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img43',/*url*/'buttons/quotes-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Quotes"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="intro.html">
+			<img border="0" id="img42" src="buttons/intro-button.gif" height="20" width="165" alt="Introduction" onmouseover="FP_swapImg(0,0,/*id*/'img42',/*url*/'buttons/intro-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img42',/*url*/'buttons/intro-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img42',/*url*/'buttons/intro-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img42',/*url*/'buttons/intro-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Introduction"></a></td>
+          </tr>
+          <tr>
+            <td align="right"><a href="name.html">
+			<img border="0" id="img28" src="buttons/name-button.gif" height="20" width="165" alt="What's In A Name" onmouseover="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="What's In A Name"></a></td>
+          </tr>
+          <tr>
+            <td align="right">
+			<img border="0" id="img8" src="buttons/victim-red.gif" height="20" width="165" alt="Victims" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #FF0000; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-img-hover: 0; fp-img-press: 0; fp-preload: 0; fp-transparent: 1; fp-proportional: 0" fp-title="Victims"></td>
+          </tr>
+          <tr>
+            <td align="right">
+			<p align="center"><a href="letters.html">
+			<img border="0" id="img29" src="buttons/letters-button.gif" height="20" width="165" alt="Letters And Articles" onmouseover="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Letters And Articles"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="suspects.html">
+			<img border="0" id="img30" src="buttons/suspects-button.gif" height="20" width="165" alt="Suspects" onmouseover="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Suspects"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="manson_family_page.html">
+			<img border="0" id="img31" src="buttons/family_page-button.gif" height="20" width="165" alt="The Manson Family Page" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="The Manson Family Page" onmouseover="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="autopsy_files.html">
+			<img border="0" id="img32" src="buttons/autopsy_files-button.gif" height="20" width="165" alt="Autopsy Files" onmouseover="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Autopsy Files"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="pertinent_info.html">
+			<img border="0" id="img33" src="buttons/pertinent-button.gif" height="20" width="165" alt="Pertinent Information" onmouseover="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/pertinent-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/pertinent-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/pertinent-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/pertinent-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Pertinent Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="about.html">
+			<img border="0" id="img34" src="buttons/about-button.gif" height="20" width="165" alt="About The Author" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="About The Author" onmouseover="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/about-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/about-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/about-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/about-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="contact.html">
+			<img border="0" id="img35" src="buttons/contact-button.gif" height="20" width="165" alt="Contact The Author" onmouseover="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/contact-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/contact-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/contact-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/contact-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Contact The Author"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="order.html">
+			<img border="0" id="img36" src="buttons/order-button.gif" height="20" width="165" alt="Ordering Information" onmouseover="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/order-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/order-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/order-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/order-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ordering Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="links.html">
+			<img border="0" id="img37" src="buttons/links-button.gif" height="20" width="165" alt="Related Site Links" onmouseover="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/links-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/links-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/links-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/links-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Related Site Links"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="visitor_info.html">
+			<img border="0" id="img38" src="buttons/visitor_info-button.gif" height="20" width="165" alt="Visitor Information" onmouseover="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/visitor_info-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/visitor_info-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/visitor_info-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/visitor_info-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Visitor Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="question.html">
+			<img border="0" id="img39" src="buttons/question-button.gif" height="20" width="165" alt="Ask Howard Davis" onmouseover="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/question-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/question-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/question-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/question-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ask Howard Davis"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="donation_request.html">
+			<img border="0" id="img40" src="buttons/donation-button.gif" height="20" width="165" alt="Donation Request" onmouseover="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/donation-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/donation-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/donation-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/donation-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Donation Request"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="for_sale_collectable.html">
+			<img border="0" id="img41" src="buttons/collectors-button.gif" height="20" width="165" alt="Collector's Item For Sale" onmouseover="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/collectors-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/collectors-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/collectors-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/collectors-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Collector's Item For Sale"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<a href="tzmc_website_history.html">
+			<img border="0" id="img44" src="buttons/history_button.gif" height="20" width="165" alt="TZMC Website History" onmouseover="FP_swapImg(0,0,/*id*/'img44',/*url*/'buttons/history_hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img44',/*url*/'buttons/history_button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img44',/*url*/'buttons/history_pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img44',/*url*/'buttons/history_hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="TZMC Website History"></a></td>
+          </tr>
+          </table>
+      </div>
+    <p>&nbsp;</TD>
+    
+    <TD width=591 height="20" valign="top" bgcolor="#000000">
+	<div align="center">
+		<table border="0" cellpadding="0" width="550">
+			<tr>
+				<td>
+              <p align="center"><b><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="3" color="#00FFFF"><blink>Zodiac Victims</blink></font></span></b></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#FF9933"><span style="mso-bidi-font-size: 10.0pt">Click
+              on each name for further information.</span></font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="left">
+            <span style="mso-bidi-font-size: 10.0pt"><b><a href="victim_johns.html" name="Johns"><font face="Arial" size="2" color="#FF9933">Kathleen
+              Johns</font></a><font face="Arial" size="2" color="#FFFFFF">&nbsp; -
+              </font>
+              </b>
+              <font face="Arial" size="2" color="#FFFFFF">The only known
+              Zodiac victim to escape unharmed.&nbsp; Read her testimony of the
+              event. The
+              exclusive
+              </font>
+              <b><font face="Arial" size="2" color="#00FFFF"> Kathleen Johns Interview</font><font face="Arial" size="2" color="#FFFFFF">
+              </font></b><font face="Arial" size="2" color="#FFFFFF"> is
+              available on CD for purchase. See the </font><font face="Arial" size="2" color="#FF9933">Ordering
+              Information</font><font face="Arial" size="2" color="#FFFFFF">
+              page for details.</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="left"><span style="mso-bidi-font-size: 10.0pt"><b><a href="victim_lass.html" name="Lass"><font face="Arial" size="2" color="#FF9933">Donna
+              Lass</font></a><font face="Arial" size="2" color="#FFFFFF"> 
+              - </font></b><font face="Arial" size="2" color="#FFFFFF"> 
+ Donna Lass was a pretty
+              twenty-five year old woman with
+              frosted blonde hair and blue eyes.
+              She worked as a nurse at the Sahara
+              hotel in Stateline, Nevada and was
+              by all accounts a &quot;good girl.<font face="Arial" size="2">&quot;
+              On Labor Day, September 6, 1970 Donna Lass disappeared and
+              some believe she was abducted from where she&nbsp;worked by the Zodiac killer</font>
+              . . .</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><b><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="3" color="#00FFFF"><blink>
+              Possible Zodiac Victims</blink></font></span></b></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b><span style="mso-bidi-font-size: 10.0pt"><a href="victim_sb_murders.html" name="SB"><font face="Arial" size="2" color="#FF9933">Santa
+              Barbara Murders</font></a><font face="Arial" size="2" color="#FFFF00">
+              </font></span></b><font color="#FFFFFF">-</font><span style="mso-bidi-font-size: 10.0pt"><b><font color="#FFFFFF" face="Arial" size="2">
+              </font></b></span><font size="2" face="Arial" color="#FFFFFF">Were these lovers "the first"?</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><span style="mso-bidi-font-size: 10.0pt"><b><a href="victim_sd_honeymoon.html" name="SD"><font face="Arial" size="2" color="#FF9933">San
+              Diego Honeymoon Murders</font></a><font face="Arial" size="2" color="#FFFFFF"> -
+              </font></b><font face="Arial" size="2" color="#FFFF00"><font SIZE="2" color="#FFFFFF" face="Arial">Joyce
+              and Johnny Swindle, 20-year-old childhood sweethearts, were shot
+              to death in San Diego on February 5, 1964.</font> </font><font SIZE="2" color="#FFFFFF" face="Arial">&quot;There
+              are a hell of a lot more down there.&quot;</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><span style="mso-bidi-font-size: 10.0pt"><b><a href="victim_bates.html" name="Bates"><font face="Arial" size="2" color="#FF9933">Cheri
+              Jo Bates</font></a><font face="Arial" size="2" color="#FF9933"> </font><font face="Arial" size="2" color="#FFFFFF"> -
+              </font></b><font face="Arial" size="2" color="#FFFFFF"> 
+              October 30, 1966, Riverside, California's first unsolved murder in
+              100 years. The police
+              think they know who did it. But their suspect's DNA was not a
+              match. Here is the <u> first</u>
+              public viewing of the &quot;External
+              Examination&quot; portion of Cheri Jo Bates' autopsy
+              report.</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b><span style="mso-bidi-font-size: 10.0pt">
+				<a href="victim_benedict.html" name="Benedict0"><font face="Arial" size="2" color="#FF9933">Nikki
+              Benedict</font></a><font face="Arial" size="2" color="#FFFFFF"> - </font></span></b><font face="Arial" size="2" color="#FFFFFF"><span style="mso-bidi-font-size: 10.0pt">On May Day<b>
+              </b>
+              (</span></font><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="2" color="#FF9933">the major witchcraft Sabbat of Beltane and it's Feast of
+              Fires</font><font face="Arial" size="2" color="#FFFFFF">) 1967 (</font><font face="Arial" size="2" color="#FF9933">the last quarter phase of the moon</font><font face="Arial" size="2" color="#FFFFFF">)
+              a young hazel-eyed blond girl, 5' 6&quot; with an athletic build (</font><font face="Arial" size="2" color="#FF9933">like Bates</font><font face="Arial" size="2" color="#FFFFFF">) was found on a path near a swale bleeding from stab wounds to her
+              chest.</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="victim_habe.html" name="Habe0"><font face="Arial" size="2" color="#FF9933">Marina
+              Habe</font></a><font face="Arial" size="2" color="#FFFFFF"> - </font></b><font face="Arial" size="2" color="#FFFFFF"> On
+              December 30, 1968, this 17-year-old was taken from her own
+              driveway.</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b><span style="mso-bidi-font-size: 10.0pt">
+				<a href="victim_tashman.html" name="Tashman0"><font face="Arial" size="2" color="#FF9933">Rose
+              Tashman</font></a><font face="Arial" size="2" color="#FFFFFF"> - </font></span></b><font face="Arial" size="2" color="#FFFFFF"><span style="mso-bidi-font-size: 10.0pt">An 18-year-old Israeli beauty, was driving home late at night
+              (</span></font><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="2" color="#FF9933">on 
+				a new moon, a Zodiac trait</font><font face="Arial" size="2" color="#FFFFFF">) 
+				on the Hollywood Freeway on May 18, 1969 when her tire went out. 
+				Evidently, a &quot;Good Samaritan&quot; stopped and offered help . . .</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="2">
+				<a href="victim_gaul_sharp.html" name="Gaul0"><font color="#FF9933">Gaul
+              / Sharp
+              Murders</font></a><font color="#FFFFFF"> - </font> </font></span></b><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="2" color="#FFFFFF">A
+              previously unknown Zodiac letter is connected to this double
+              murder.</font></span></td>
+			</tr>
+			<tr>
+				<td>
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b><a href="victim_roberts.html" name="Roberts"><font face="Arial" size="2" color="#FF9933"><span style="mso-bidi-font-size: 10.0pt">Leona
+              Roberts</span></font></a><font face="sans-serif" size="2" color="#FF0000">
+				</font>
+				<span style="mso-bidi-font-size: 10.0pt">
+				<font color="#FFFFFF" face="Arial" size="2">
+              - </font></span></b><span style="mso-bidi-font-size: 10.0pt"><font color="#FFFFFF" face="Arial" size="2">This
+              16-year-old&nbsp;was abducted from her boyfriends
+              apartment and some think she may have been a Zodiac victim.</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b><span style="mso-bidi-font-size: 10.0pt">
+				<a href="victim_tan.html" name="Tan0"><font face="Arial" size="2" color="#FF9933">Pat
+              Tan</font></a><font color="#FFFFFF" face="Arial" size="2"> - </font></span></b><font face="Arial" size="2" color="#FFFFFF"><span style="mso-bidi-font-size: 10.0pt">
+				&quot;. . . I shall change the way the collecting of slaves. I shall 
+				no longer announce to anyone when I commit my murders, they 
+				shall look like routine robberies, killings of anger, &amp; a few 
+				fake accidents, etc . . . .&quot;</span></font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+              <span style="mso-bidi-font-size: 10.0pt"><b><a href="victim_hood_garcia.html" name="Garcia"><font face="Arial" size="2" color="#FF9933">Hood
+              / Garcia Murders</font></a><font face="Arial" size="2" color="#FFFFFF">
+              - </font></b><font face="Arial" size="2" color="#FFFFFF">Another
+              similar case that is unsolved.</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><span style="mso-bidi-font-size: 10.0pt"><b><a href="victim_graham.html" name="Graham"><font face="Arial" size="2" color="#FF9933">Robin
+              Graham</font></a><font face="Arial" size="2" color="#FFFFFF"> - </font></b><font face="Arial" size="2" color="#FFFFFF">  "There are a hell of a lot more
+              (</font><font face="Arial" size="2" color="#FF9933">victims</font><font face="Arial" size="2" color="#FFFFFF">) down there (</font><font face="Arial" size="2" color="#FF9933">Southern California</font><font face="Arial" size="2" color="#FFFFFF">)&quot;, said Zodiac ". . . you are only finding the easy
+              ones.&quot;</font></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><b><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="3" color="#00FFFF"><blink>Maybe
+              You Can Help!</blink></font></span></b></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+              <b><a href="victim_jane_doe_1969.html" name="Jane_Doe"><font face="Arial" size="2" color="#FF9933"><span style="mso-bidi-font-size: 10.0pt">Jane
+              Doe 1969</span></font></a><font face="Arial" size="2" color="#FFFFFF"><span style="mso-bidi-font-size: 10.0pt">&nbsp; -
+              Can
+              you help identify this victim?</span></font></b></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><a href="#Top"><font face="Arial" size="2" color="#00FFFF"><b>Top
+              of page</b></font></a></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			</table>
+	</div>
+	</TD></TR>
+  </TBODY></TABLE></DIV>
+    
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=7144748; 
+var sc_invisible=1; 
+var sc_security="b6ee11ab"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="hits counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7144748/0/b6ee11ab/1/"
+alt="hits counter" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</BODY></HTML>

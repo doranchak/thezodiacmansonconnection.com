@@ -1,0 +1,593 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>TZMC - Detective Davis</TITLE>
+<SCRIPT language=JavaScript>
+<!-- http://www.spacegun.co.uk -->
+	var message = "Right-click is disabled. The information on this site is Copyright © 1987-2012."; 
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
+	document.onmousedown = rtclickcheck;
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+</SCRIPT>
+
+<rule name ="Prevent image hotlinking">
+<match url = ".*\.(gif|jpg|png)$"/>
+<conditions>
+<add input = "{HTTP_REFERER}" pattern = "^$" negate = "true" />
+<add input = "{HTTP_REFERER}" pattern = "^https?://www\.mydomain\.com/.*$" negate = "true" />
+</conditions>
+<action type = "Rewrite" url = "/images/icons/hotlinks.jpg" />
+</rule>
+
+<META 
+content="Find out the shocking truth behind the murders of the Zodiac serial killer, as Howard A. Davis, Ph.D. reveals the Charles Manson family connection.  Discover the reality behind the gruesome murders in the 1960's" 
+name=description>
+<META 
+content="Zodiac,killer,killings,murders,murder,serial killer,homicide,homicidal,crime,criminal,mass murders,mass murdering,mystery,unsolved crime,unsolved murder,unsolved mystery,conspiracy,Charles Manson,Manson Family,Charlie Manson,conspiracy theories" 
+name=keywords>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+</HEAD>
+<BODY vLink=#0033CC aLink=#00FF00 link=#FF0000 leftMargin=0 topMargin=0 text="#00FF00" bgcolor="#000000" background="images/code_back.gif" ondragstart="return false" onselectstart="return false">
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="1005" height="100">
+    <tr>
+        <td width="525" bgcolor="#23178C" valign="top" align="left">
+        <a name="Top"></a>
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue1.gif" width="250" height="46"></td>
+        <td width="525" bgcolor="#23178C" valign="top" align="left">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <td width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/manson_eye_2.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <td width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue3.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+  </table>
+</div>
+<DIV align=left>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0 background="images/code_back.gif">
+  <TBODY>
+  <TR>
+    <TD width=209 valign="top">&nbsp;</TD>
+    
+    <TD width=591 height="20" valign="top" bgcolor="#000000">&nbsp;</TD></TR>
+  <TR>
+    <TD width=209 valign="top">
+      <div align="right">
+        <table border="0" cellpadding="2" width="165">
+          <tr>
+            <td align="right"><a href="index.htm">
+			<img border="0" id="img22" src="buttons/home-button.gif" height="20" width="165" alt="Home" onmouseover="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Home"></a></td>
+          </tr>
+          <tr>
+            <td align="right">
+			<p align="center"><a href="update.html">
+			<img border="0" id="img24" src="buttons/updates-button.gif" height="20" width="165" alt="Updates" onmouseover="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Updates"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="quotes.html">
+			<img border="0" id="img26" src="buttons/quotes-button.gif" height="20" width="165" alt="Quotes" onmouseover="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Quotes"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="intro.html">
+			<img border="0" id="img25" src="buttons/intro-button.gif" height="20" width="165" alt="Introduction" onmouseover="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Introduction"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="name.html">
+			<img border="0" id="img28" src="buttons/name-button.gif" height="20" width="165" alt="What's In A Name" onmouseover="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="What's In A Name"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<a href="victims.html">
+			<img border="0" id="img27" src="buttons/victims-button.gif" height="20" width="165" alt="Victims" onmouseover="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Victims"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="letters.html">
+			<img border="0" id="img29" src="buttons/letters-button.gif" height="20" width="165" alt="Letters And Articles" onmouseover="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Letters And Articles"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="suspects.html">
+			<img border="0" id="img30" src="buttons/suspects-button.gif" height="20" width="165" alt="Suspects" onmouseover="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Suspects"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="manson_family_page.html">
+			<img border="0" id="img31" src="buttons/family_page-button.gif" height="20" width="165" alt="The Manson Family Page" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="The Manson Family Page" onmouseover="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="autopsy_files.html">
+			<img border="0" id="img32" src="buttons/autopsy_files-button.gif" height="20" width="165" alt="Autopsy Files" onmouseover="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Autopsy Files"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center">
+			<img border="0" id="img21" src="buttons/pertinent-red.gif" height="20" width="165" alt="Pertinent Information" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #FF0000; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-img-hover: 0; fp-img-press: 0; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Pertinent Information"></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="about.html">
+			<img border="0" id="img33" src="buttons/about-button.gif" height="20" width="165" alt="About The Author" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="About The Author" onmouseover="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="contact.html">
+			<img border="0" id="img34" src="buttons/contact-button.gif" height="20" width="165" alt="Contact The Author" onmouseover="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Contact The Author"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="order.html">
+			<img border="0" id="img35" src="buttons/order-button.gif" height="20" width="165" alt="Ordering Information" onmouseover="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ordering Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="links.html">
+			<img border="0" id="img36" src="buttons/links-button.gif" height="20" width="165" alt="Related Site Links" onmouseover="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Related Site Links"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="visitor_info.html">
+			<img border="0" id="img37" src="buttons/visitor_info-button.gif" height="20" width="165" alt="Visitor Information" onmouseover="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Visitor Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="question.html">
+			<img border="0" id="img38" src="buttons/question-button.gif" height="20" width="165" alt="Ask Howard Davis" onmouseover="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ask Howard Davis"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="donation_request.html">
+			<img border="0" id="img39" src="buttons/donation-button.gif" height="20" width="165" alt="Donation Request" onmouseover="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Donation Request"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="for_sale_collectable.html">
+			<img border="0" id="img40" src="buttons/collectors-button.gif" height="20" width="165" alt="Collector's Item For Sale" onmouseover="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Collector's Item For Sale"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<a href="tzmc_website_history.html">
+			<img border="0" id="img41" src="buttons/history_button.gif" height="20" width="165" alt="TZMC Website History" onmouseover="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img41',/*url*/'buttons/history_hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="TZMC Website History"></a></td>
+          </tr>
+          </table>
+      </div>
+    </TD>
+    <TD valign="top" bgcolor="#000000" width="591">
+      <div align="center">
+        <center>
+        <table border="0" cellpadding="0" cellspacing="0" width="554" bgcolor="#000000">
+          <tr>
+            <td width="554">
+              <p align="center"><b><span style="mso-bidi-font-size: 10.0pt"><font face="Arial" size="3" color="#00FFFF">
+				D</font></span><font face="sans-serif" color="#00FFFF">etective 
+				Charles Davis Located</font></b></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <font face="sans-serif" size="2" color="#FF9933">Wednesday,
+				<span style="cursor: hand; border-bottom: medium none; background:" id="lw_1252546059_2" class="yshortcuts">
+				September 2</span>, 2009, 12:24 PM</font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif; font-weight: 400">
+				<font size="2" color="#FF9933">Det. Charlie,</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="left">
+				<span style="font-family: sans-serif; font-weight: 400">
+				<font size="2" color="#FF9933">Here is what I remember:</font></span></td>
+          </tr>
+        </center>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="left">
+                        <font color="#FF9933">
+						<span style="font-family: sans-serif; font-weight: 400">
+						<font size="2">I&nbsp;informed you and your then partner what 
+						my ex-Brother-In-Law had told me about a &quot;male 
+						member&quot;&nbsp;of the </font></span><span class="yshortcuts">
+						<span style="cursor: hand; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%" id="lw_1252544617_3">
+						<span style="font-family: sans-serif"><font size="2">
+						Manson Family</font></span><font face="sans-serif" size="2">.
+						</font></span></span></font>
+						<span style="font-weight: 400">
+						<font face="sans-serif" size="2" color="#FF9933">No name 
+						was given for whom it was. This Family member was 
+						“responsible for two Manson related murders” that he was 
+						tried for and convicted of. He said that when this 
+						Family member’s </font>
+						<span style="font-size: 12.0pt; font-family: Arial">
+						<span id="lw_1252544617_4"></span></span></span>
+						<font color="#FF9933"><span style="font-family: Arial">
+						<span class="yshortcuts">
+						<span style="font-family: sans-serif" id="lw_1252533456_0">
+						<font size="2">personal effects</font></span></span></span><span style="font-family: sans-serif; font-weight: 400"><font size="2"> 
+						had been examined they “came across the Zodiac hood, 
+						knife and other evidence.” No further items were 
+						mentioned.</font></span></font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="left"><span style="font-weight: 400">
+				<font face="sans-serif" size="2" color="#FF9933">He also said 
+				that there was a private meeting in which a legal expert was 
+				brought in to assess the discovery and its implications. They 
+				were told that it would cost some two million dollars to try 
+				this suspect as &quot;Zodiac&quot; up in </font>
+				<span style="font-size: 12.0pt; font-family: Arial">
+				<span style="cursor: hand; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%" id="lw_1252533456_1">
+				</span><span id="lw_1252544617_5"></span></span></span>
+				<font color="#FF9933"><span id="lw_1252544617_5">
+				<span class="yshortcuts"><font face="sans-serif" size="2">
+				Northern California</font></span></span></font><span style="font-weight: 400"><font face="sans-serif" size="2" color="#FF9933"> 
+				and that the same penalty would be given, or a life sentence, that 
+				had already been decided in a court of law. Also, that it was 
+				possible, due to the conditions of the case, that he could be 
+				freed in a court trial there. It was later decided, since they 
+				barely got him on the two homicides in </font>
+				<span style="font-size: 12.0pt; font-family: Arial">
+				<span style="cursor: hand; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%" id="lw_1252533456_2">
+				</span>
+				<span style="cursor: hand; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%" id="lw_1252544617_6">
+				</span></span></span><font color="#FF9933">
+				<span style="cursor: hand; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%" id="lw_1252544617_6">
+				<span class="yshortcuts"><font face="sans-serif" size="2">
+				Southern California</font></span></span><span style="font-family: sans-serif; font-weight: 400"><font size="2"> 
+				and they had spent some one million dollars on the case plus 
+				thousands of man-hours, that they would simply allow him to 
+				serve his time. My ex-Brother-In-Law told me “they had it set so 
+				that he would never get out of&nbsp;prison.”</font></span></font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="left"><span style="font-weight: 400">
+				<font face="sans-serif" size="2" color="#FF9933">You then 
+				proposed to test this story, as it were, by contacting a&nbsp;person 
+				- a detective -&nbsp;you knew in Colorado. This person knew an 
+				Archivist that could find Davis' CII records in Sacramento. You 
+				were confident - based on past experience - that the records 
+				would be found and sent to you through your contact in </font>
+				<span style="font-size: 12.0pt; font-family: Arial">
+				<span id="lw_1252544617_7"></span></span></span>
+				<font color="#FF9933"><span style="font-family: Arial">
+				<span class="yshortcuts">
+				<span style="font-family: sans-serif" id="lw_1252533456_3">
+				<font size="2">Colorado</font></span></span></span><span style="font-family: sans-serif; font-weight: 400"><font size="2">.</font></span></font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="left"><font color="#FF9933">
+				<span style="font-family: sans-serif; font-weight: 400">
+				<font size="2">After some time you called me at work and asked 
+				me to come to your </font></span><span class="yshortcuts">
+				<span style="font-family: sans-serif"><font size="2">detective 
+				agency</font></span></span></font><span style="font-weight: 400"><font face="sans-serif" size="2" color="#FF9933"> 
+				office. When I arrived you informed me, with your partner 
+				present, that the Archivist asked your Colorado contact, “What 
+				has Davis done as I can't get his records - there was no way to 
+				obtain them.” The Archivist&nbsp;found a computer number, but when he 
+				brought it up it stated “records not available.” He said he 
+				could get Manson's records and other Family members, even well 
+				known criminals, but not Davis’. He later spoke to another 
+				Archivist and he was told the records for Davis were in a “safe 
+				upstairs and needed a </font>
+				<span style="font-size: 12.0pt; font-family: Arial">
+				<span id="lw_1252544617_8"></span></span></span>
+				<font color="#FF9933"><span style="font-family: Arial">
+				<span class="yshortcuts">
+				<span style="font-family: sans-serif" id="lw_1252533456_4">
+				<font size="2">court order</font></span></span></span><span style="font-family: sans-serif; font-weight: 400"><font size="2"> 
+				to be unsealed.”</font></span></font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="left">
+				<span style="font-family: sans-serif; font-weight: 400">
+				<font size="2" color="#FF9933">All of this convinced or at least 
+				gave some presumption to you and your partner that my story as 
+				given to me in 1974 by my, then, Brother-In-Law had some degree 
+				of merit.</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="left"><font color="#FF9933">
+				<span style="font-family: sans-serif; font-weight: 400">
+				<font size="2">Charlie, some are saying I never knew a detective
+				</font></span><span class="yshortcuts">
+				<span style="font-family: sans-serif"><font size="2">Charlie 
+				Davis</font></span></span><span style="font-family: sans-serif; font-weight: 400"><font size="2"> 
+				and the above account never took place and that my 
+				ex-Brother-In-Law never told me such a story in the first 
+				place.&nbsp; I could not locate you to verify my story. This 
+				was&nbsp;difficult for me&nbsp;as I knew you did “exist” and that you
+				</font></span>
+				<span style="font-family: sans-serif; font-style: normal">
+				<font size="2">did relate</font></span><span style="font-family: sans-serif; font-weight: 400"><font size="2"> 
+				that account as given to me at your office. Your then partner, 
+				whose name I have forgotten, was a witness to your narrative as 
+				you gave it to me.</font></span></font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <font face="sans-serif" size="2" color="#FF9933">
+				<strong style="font-weight: 400">Most Sincerely,</strong></font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-weight: 400">
+				<font face="sans-serif" size="2" color="#FF9933">Howard</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <font face="sans-serif" size="2" color="#FFFFFF">Wednesday,
+				<span style="cursor: hand; border-bottom: medium none; background:" id="lw_1252546521_3" class="yshortcuts">
+				September 2</span>, 2009, 4:04 PM</font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif">
+				<font size="2" color="#FFFFFF">Howard, hi!</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif">
+				<font size="2" color="#FFFFFF">The story you just related is 
+				basically correct.&nbsp; My confidential, <span class="yshortcuts">
+				reliable sources</span> went through confidential contacts at 
+				CII, Sacramento&nbsp;and they were unable&nbsp;to locate
+				<span class="yshortcuts">Bruce Davis</span>' file.&nbsp; We were 
+				interested in getting a&nbsp;copy of Davis' fingerprints to match with latents you had&nbsp;from a source.&nbsp; If I remember correctly, this 
+				was a copy from latents recovered&nbsp;in a Riverside homicide that 
+				you had gotten and the crime was&nbsp;believed to be&nbsp;done by Zodiac.</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif">
+				<font size="2" color="#FFFFFF">Our reliable sources said that 
+				Davis' information wasn't available to employees at CII and they 
+				did not know where the file had gone.&nbsp;This was the first time 
+				that my source in Colorado, through his sources, was not able to 
+				deliver.&nbsp; I believe that my former partner Jim B. was present 
+				during our conversation.</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif">
+				<font size="2" color="#FFFFFF">My contacts were amazed that
+				<span class="yshortcuts">Bruce Davis' file</span>, and prints, 
+				could not be located at CII.&nbsp; This was, according to them, 
+				extremely unusual and they had no answer for this.&nbsp; We just 
+				surmised, without evidence,&nbsp;that this just corroborated the 
+				story you had related to us that authorities had found evidence 
+				at Spahn&nbsp;Ranch (?) and for economic reasons the information was 
+				being covered up by certain public authorities to avoid the 
+				expense of another public circus type trial.</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif">
+				<font size="2" color="#FFFFFF">Now, I don't know if any of this 
+				is true because all of it is hearsay and I don't know what 
+				pressures or fears my contacts were experiencing through their 
+				inquiries.&nbsp;It just seemed odd that this file was not 
+				available.&nbsp;&nbsp;I have lost contact with these sources and I know of 
+				two who are now deceased.&nbsp; So we are probably just where we 
+				started.</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif">
+				<font size="2" color="#FFFFFF">Will they believe me without 
+				proof?&nbsp; I doubt it.&nbsp; People have their minds made up on this 
+				case.&nbsp; I just believe that you really pieced together a very 
+				good case based upon <span class="yshortcuts">circumstantial 
+				evidence</span>.&nbsp; It should be given just as much weight as any 
+				other belief regarding these crimes.</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif">
+				<font size="2" color="#FFFFFF">We probably will never know for 
+				certain as Bruce, Tex, Charlie and other family members will 
+				probably take it all to their graves.</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <span style="font-family: sans-serif">
+				<font size="2" color="#FFFFFF">Regards,&nbsp;Charlie</font></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="center"><b><font face="Arial" color="#00FFFF" size="2">
+				Also see:</font></b></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="center"><b><a href="Howard_Davis_VSA_test.html" name="VSA"><font face="Arial" size="2" color="#FF9933">Howard
+            Davis' Voice Stress Analysis Test</font></a></b></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="center"><b><a href="howard_davis_notarized_statement.html" name="Notary"><font face="Arial" size="2" color="#FF9933">Howard
+            Davis' Notarized Statement</font></a></b><font face="Arial" size="2" color="#FFFFFF">
+            </font></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              <p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="pertinent_info.html#Det_Davis"><font face="Arial" size="2" color="#00FFFF">Back</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </font></b><a href="#Top"><font face="Arial" size="2" color="#00FFFF"><b>Top
+              of page</b></font></a></span></td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td width="554">
+              &nbsp;</td>
+          </tr>
+          </table>
+      </div>
+      </center>
+    </TD></TR>
+  </TBODY></TABLE></DIV>
+    
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=7144748; 
+var sc_invisible=1; 
+var sc_security="b6ee11ab"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="hits counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7144748/0/b6ee11ab/1/"
+alt="hits counter" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</BODY></HTML>

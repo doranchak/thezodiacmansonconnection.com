@@ -1,0 +1,1173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>TZMC - Autopsy Interpretations</TITLE>
+<SCRIPT language=JavaScript>
+<!-- http://www.spacegun.co.uk -->
+	var message = "Right-click is disabled. The information on this site is Copyright © 1987-2012."; 
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
+	document.onmousedown = rtclickcheck;
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+</SCRIPT>
+
+<rule name ="Prevent image hotlinking">
+<match url = ".*\.(gif|jpg|png)$"/>
+<conditions>
+<add input = "{HTTP_REFERER}" pattern = "^$" negate = "true" />
+<add input = "{HTTP_REFERER}" pattern = "^https?://www\.mydomain\.com/.*$" negate = "true" />
+</conditions>
+<action type = "Rewrite" url = "/images/icons/hotlinks.jpg" />
+</rule>
+
+<META 
+content="Find out the shocking truth behind the murders of the Zodiac serial killer, as Howard A. Davis, Ph.D. reveals the Charles Manson family connection.  Discover the reality behind the gruesome murders in the 1960's" 
+name=description>
+<META 
+content="Zodiac,killer,killings,murders,murder,serial killer,homicide,homicidal,crime,criminal,mass murders,mass murdering,mystery,unsolved crime,unsolved murder,unsolved mystery,conspiracy,Charles Manson,Manson Family,Charlie Manson,conspiracy theories" 
+name=keywords>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+</HEAD>
+<BODY vLink=#0033CC aLink=#00FF00 link=#FF0000 leftMargin=0 topMargin=0 text="#00FF00" bgcolor="#000000" background="images/code_back.gif" ondragstart="return false" onselectstart="return false">
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="1005" height="100">
+    <tr>
+        <TD width="525" bgcolor="#23178C" valign="top" align="left">
+        <a name="Top"></a>
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue1.gif" width="250" height="46"></td>
+        <td width="525" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <TD width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/manson_eye.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+    <tr>
+        <TD width="275" bgcolor="#23178C">
+        <td width="250" bgcolor="#FFFFFF">
+        <img border="0" src="images/zodiac_title_blue3.gif" width="250" height="32"></td>
+        <td width="275" bgcolor="#23178C">
+        &nbsp;</td>
+    </tr>
+  </table>
+</div>
+<DIV align=left>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0 background="images/code_back.gif">
+  <TBODY>
+  <TR>
+    <TD width=209 valign="top"></TD>
+    
+    <TD width=591 height="20" valign="top" bgcolor="#000000">&nbsp;</TD></TR>
+  <TR>
+    <TD width=209 valign="top">
+      <div align="right">
+        <table border="0" cellpadding="2" width="165">
+          <tr>
+            <td align="right"><a href="index.htm">
+			<img border="0" id="img22" src="buttons/home-button.gif" height="20" width="165" alt="Home" onmouseover="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img22',/*url*/'buttons/home-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Home"></a></td>
+          </tr>
+          <tr>
+            <td align="right">
+			<p align="center"><a href="update.html">
+			<img border="0" id="img24" src="buttons/updates-button.gif" height="20" width="165" alt="Updates" onmouseover="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img24',/*url*/'buttons/updates-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Updates"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="quotes.html">
+			<img border="0" id="img26" src="buttons/quotes-button.gif" height="20" width="165" alt="Quotes" onmouseover="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img26',/*url*/'buttons/quotes-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Quotes"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="intro.html">
+			<img border="0" id="img25" src="buttons/intro-button.gif" height="20" width="165" alt="Introduction" onmouseover="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img25',/*url*/'buttons/intro-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Introduction"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="name.html">
+			<img border="0" id="img28" src="buttons/name-button.gif" height="20" width="165" alt="What's In A Name" onmouseover="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img28',/*url*/'buttons/name-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="What's In A Name"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<a href="victims.html">
+			<img border="0" id="img27" src="buttons/victims-button.gif" height="20" width="165" alt="Victims" onmouseover="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img27',/*url*/'buttons/victims-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Victims"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="letters.html">
+			<img border="0" id="img29" src="buttons/letters-button.gif" height="20" width="165" alt="Letters And Articles" onmouseover="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img29',/*url*/'buttons/letters-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Letters And Articles"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="suspects.html">
+			<img border="0" id="img30" src="buttons/suspects-button.gif" height="20" width="165" alt="Suspects" onmouseover="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img30',/*url*/'buttons/suspects-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Suspects"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="manson_family_page.html">
+			<img border="0" id="img31" src="buttons/family_page-button.gif" height="20" width="165" alt="The Manson Family Page" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="The Manson Family Page" onmouseover="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img31',/*url*/'buttons/family_page-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="autopsy_files.html">
+			<img border="0" id="img32" src="buttons/autopsy_files-button.gif" height="20" width="165" alt="Autopsy Files" onmouseover="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img32',/*url*/'buttons/autopsy_files-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Autopsy Files"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center">
+			<img border="0" id="img21" src="buttons/pertinent-red.gif" height="20" width="165" alt="Pertinent Information" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #FF0000; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-img-hover: 0; fp-img-press: 0; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Pertinent Information"></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="about.html">
+			<img border="0" id="img33" src="buttons/about-button.gif" height="20" width="165" alt="About The Author" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="About The Author" onmouseover="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img33',/*url*/'buttons/about-hover.gif')"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="contact.html">
+			<img border="0" id="img34" src="buttons/contact-button.gif" height="20" width="165" alt="Contact The Author" onmouseover="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img34',/*url*/'buttons/contact-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Contact The Author"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="order.html">
+			<img border="0" id="img35" src="buttons/order-button.gif" height="20" width="165" alt="Ordering Information" onmouseover="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img35',/*url*/'buttons/order-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ordering Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="links.html">
+			<img border="0" id="img36" src="buttons/links-button.gif" height="20" width="165" alt="Related Site Links" onmouseover="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img36',/*url*/'buttons/links-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Related Site Links"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="visitor_info.html">
+			<img border="0" id="img37" src="buttons/visitor_info-button.gif" height="20" width="165" alt="Visitor Information" onmouseover="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img37',/*url*/'buttons/visitor_info-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Visitor Information"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="question.html">
+			<img border="0" id="img38" src="buttons/question-button.gif" height="20" width="165" alt="Ask Howard Davis" onmouseover="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img38',/*url*/'buttons/question-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Ask Howard Davis"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="donation_request.html">
+			<img border="0" id="img39" src="buttons/donation-button.gif" height="20" width="165" alt="Donation Request" onmouseover="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img39',/*url*/'buttons/donation-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Donation Request"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<p align="center"><a href="for_sale_collectable.html">
+			<img border="0" id="img40" src="buttons/collectors-button.gif" height="20" width="165" alt="Collector's Item For Sale" onmouseover="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img40',/*url*/'buttons/collectors-hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="Collector's Item For Sale"></a></td>
+          </tr>
+			<tr>
+            <td align="right">
+			<a href="tzmc_website_history.html">
+			<img border="0" id="img41" src="file:///C:/Documents%20and%20Settings/USER/My%20Documents/My%20Webs/TheZodiacMansonConnection/buttons/history_button.gif" height="20" width="165" alt="TZMC Website History" onmouseover="FP_swapImg(0,0,/*id*/'img41',/*url*/'file:///C:/Documents%20and%20Settings/USER/My%20Documents/My%20Webs/TheZodiacMansonConnection/buttons/history_hover.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img41',/*url*/'file:///C:/Documents%20and%20Settings/USER/My%20Documents/My%20Webs/TheZodiacMansonConnection/buttons/history_button.gif')" onmousedown="FP_swapImg(0,0,/*id*/'img41',/*url*/'file:///C:/Documents%20and%20Settings/USER/My%20Documents/My%20Webs/TheZodiacMansonConnection/buttons/history_pressed.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img41',/*url*/'file:///C:/Documents%20and%20Settings/USER/My%20Documents/My%20Webs/TheZodiacMansonConnection/buttons/history_hover.gif')" fp-style="fp-btn: Soft Rectangle 1; fp-font: Arial; fp-font-color-normal: #23178C; fp-font-color-hover: #FF0000; fp-font-color-press: #FF0000; fp-preload: 0; fp-transparent: 1; fp-proportional: 0; fp-orig: 0" fp-title="TZMC Website History"></a></td>
+          </tr>
+          </table>
+      </div>
+    <p>&nbsp;</TD>
+    
+    <TD width=591 height="20" valign="top" bgcolor="#000000">
+	<div align="center">
+		<table border="0" cellpadding="0" width="550">
+			<tr>
+				<td>
+              <p align="center"><b><font face="Arial" size="3" color="#00FFFF"><span style="mso-bidi-font-size: 10.0pt">Autopsy
+              Interpretations</span></font></b></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#FF9933">Dr.
+            Sue Norris has done autopsy work and she was kind enough to offer
+            some
+            comments on each of the following cases.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="left">
+            <font face="Times New Roman" size="3" color="#FFFFFF">To begin, let
+            me give you some of my background. My biggest concern is to assure
+            that
+            readers know I'm <i>not</i> a forensic pathologist but rather a (new)
+            doctor with some training in forensic pathology.&nbsp; My opinions
+            are not that of a forensics expert!</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="left"><font face="Times New Roman" size="3" color="#00FFFF">- Education
+            -</font></td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">Began residency in Emergency Medicine at UT-Houston (to be completed
+            2006); resigned d/t health problems</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">D.O. Arizona College of Osteopathic Medicine, 2003</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">B.S. 
+				in biology, Purdue University, 1997</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#00FFFF">- 
+				Experience (relevant to forensic medicine) -</font></td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">
+				Clinical rotation in forensic pathology at the Office of the 
+				Medical Examiner, Maricopa County, AZ, 2003</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">
+				Clinical observation and assisting at the Office of the Medical 
+				Examiner, Maricopa County, AZ, weekly during the summer between 
+				1st and 2nd year of med. school, 2000</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">
+				Volunteer EMT/firefighter from 1991 to 1998</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">Anyone 
+				who would like to see my thoughts (and those of a friend of mine 
+				currently in pathology residency- Dr. Erin Loveland) on Ms. 
+				Jensen can refer to the discussion on ZodiacKiller.com.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">My 
+				opinions are just that. Take them for what they're worth!</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font face="Times New Roman" size="3" color="#FFFFFF">I will 
+				be happy to discuss my opinions and others' conclusions with 
+				regard to these autopsy reports. Anyone wishing to do so can 
+				email me at:&nbsp;</font><font color="#FFFFFF"> </font><a href="mailto:scn@oplink.net"><font color="#00FFFF" size="2" face="Arial">
+				scn@oplink.net</font></a></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+            <a name="Habe"></a>
+            	&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">-
+            Marina Habe -</font></td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I
+            found several inconsistencies which I could not resolve. In the summary
+            the pathologist mentions vaginal dilation but in the report it
+            states that there is <i>no</i> trauma to the vagina. In the summary the
+            pathologist mentions cerebral edema and congestion but in the text
+            of the report it says <i>no</i> cerebral edema/congestion. Unfortunately we
+            don't know which statement is correct when conflicting information
+            is given.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">There are a few things that strike me about this case. First, this
+            was obvious overkill. Someone was very upset with her. The number of
+            violent acts committed against her is amazing (especially after I
+            read about her abduction and the short time interval during which
+            the killer(s) held her captive.) This leads me to believe that more
+            than one person was involved. I feel the killer(s) knew Ms. Habe and
+            had extreme anger/resentment towards her. I did not read about the
+            abduction (involving at least 2 people) until after I had finished
+            my review of the autopsy, so I came to this conclusion
+            independently.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">Second, she had very few defense wounds but no signs of bondage. To
+            me this means one of two scenarios likely occurred. Either she was
+            held down manually (though I doubt this - while not absolutely
+            necessary, I would expect to see bruising in the pattern of
+            hands/fingers on the victim's wrists) or she was too incapacitated
+            to fight. Incapacitation could be due to drugging or
+            semi-consciousness caused by head trauma, strangulation, or
+            exsanguination (if the first stab/cut was one which caused major
+            bleeding).</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">Third, I believe more than one single-edged, non-serrated knife was
+            used. Many of the wounds to her upper chest are not deep while
+            wounds to the lower chest and abdomen are. The neck wounds could
+            easily be caused by the same small knife I believe was used on the
+            upper chest. Depending on this pathologist's definition of
+            &quot;punctuate,&quot; these wounds could be caused by the small
+            knife or another weapon altogether.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">The scenario of multiple attackers with different knives struck me
+            because some of the more superficial wounds were contused. Although
+            no hilt mark is described per se, this indicates to me that those
+            wounds were made using the full length of the knife (the contusion
+            caused by the hilt, or handle, as it hits the skin). Additionally,
+            the sternum was stabbed through and through (which takes a good deal
+            of force -enough to drive the entire knife in!) yet the mediastinum
+            was relatively unscathed and the heart was untouched.&nbsp;This
+            further indicates to me that a small knife was used.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">Compared to the wounds already mentioned, the liver laceration was
+            very deep.&nbsp;It would take a very large knife to cause this
+            injury. This leads me to conclude that at least two knives were
+            used.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">While not impossible, I find it unlikely that one person stabbed the
+            victim with one knife at the neck/upper chest on the left, switched
+            knifes, and resumed at the abdomen/lower chest on the right. I feel
+            it is more likely that two individuals (one near the head on the
+            left with a small knife and one at the waist on the right with a
+            large knife with the victim supine)
+            committed these acts.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">Please 
+				note, I'm using the terms &quot;large&quot; and &quot;small&quot; to describe the 
+				knives relative to each other.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">
+				<a href="autop_habe.html"><font color="#00FFFF">Back to Habe 
+				Autopsy Report</font></a></font></b></span></td>
+			</tr>
+			<tr>
+				<td height="17">
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="autopsy_files.html#Habe"><font face="Arial" size="2" color="#00FFFF">Back
+            to Autopsy Files</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="pertinent_info.html#Terps"><font face="Arial" size="2" color="#00FFFF">Back
+            to Pertinent Information</font></a></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+            <a name="Tashman"></a>
+            &nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+            <font color="#FFFFFF" size="3" face="Times New Roman">- Rose Tashman
+            -</font></td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I don't
+            have a lot of insight to add to this one. I do believe she was
+            garroted rather than manually strangled or having the panty-ligature
+            pulled tight. I believe this to be the case for a few reasons. She
+            had extensive facial petichiae (more than what I've seen with a
+            &quot;normal&quot; strangulation), cerebral congestion, and an
+            intact hyoid bone (this usually breaks with manual strangulation).
+            The bruising pattern in the neck tissues indicates the material used
+            did not slip or move and concentrated the pressure intensely in one
+            location. This is more consistent with garroting than with manual or
+            ligature-pulled-tight types of strangulation.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I would have strongly considered this to be a murder by a stranger.
+            But because Ms. Tashman was beaten so severely I believe it is more
+            likely that the murderer was someone she knew.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">
+				<a href="autop_tashman.html"><font color="#00FFFF">Back to 
+				Tashman Autopsy Report</font></a></font></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="autopsy_files.html#Tashman"><font face="Arial" size="2" color="#00FFFF">Back
+            to Autopsy Files</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="pertinent_info.html#Terps"><font face="Arial" size="2" color="#00FFFF">Back
+            to Pertinent Information</font></a></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+            <a name="Sharp"></a>
+            	&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+            <font color="#FFFFFF" size="3" face="Times New Roman">- James Sharp
+            -</font></td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I find it
+            interesting that there is evidence of only one &quot;pattern&quot;
+            mark that appears to be from a motorcycle chain. I had a couple of
+            thoughts about this: 1.) He may have been a strong fighter and
+            ducked other attempted blows, or 2.) He may have struggled and was
+            hit with less force than required to leave a pattern.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">A psychologist might say he was stabbed in the eye because he
+            &quot;saw&quot; something he wasn't supposed to and this was the
+            killer's subconscious attempt to handle that. However, I believe the
+            fact that he was stabbed in only one eye weakens that suggestion.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">The ME 
+				mentions the irregular stab wound to the head may have been 
+				caused by a different weapon from the one which caused the other 
+				stab wounds. I think, more likely, it was caused by the same 
+				weapon and there was &quot;slippage&quot; (not uncommon when a blade comes 
+				into contact with a curved bone (such as the skull)) causing an 
+				irregular wound. However, one should keep in mind that the ME 
+				actually saw the wound, while I merely read about it.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">The stab wounds to the back of the head are very intriguing. It
+            seems to me that they were made either after Mr. Sharp was
+            unconscious or they were made post-mortem. I find it highly unlikely
+            that anyone could inflict these wounds on a moving victim. While I
+            don't know why these wounds were made, I believe they are
+            significant in some regard, either for ritualistic reasons or as a
+            message of some sort.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">
+				<a href="autop_sharp.html"><font color="#00FFFF">Back to Sharp 
+				Autopsy Report</font></a></font></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="autopsy_files.html#Sharp"><font face="Arial" size="2" color="#00FFFF">Back
+            to Autopsy Files</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="pertinent_info.html#Terps"><font face="Arial" size="2" color="#00FFFF">Back
+            to Pertinent Information</font></a></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+            <a name="Gaul"></a>
+            &nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+            <font color="#FFFFFF" size="3" face="Times New Roman">- Doreen Gaul
+            -</font></td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">She appears
+            to have been dragged but no mention is made about Mr. Sharp being
+            dragged. It could be that Mr. Sharp had clothes which covered
+            dragged surfaces and prevented abrasion. Or it could be that only
+            Ms. Gaul was moved and Mr. Sharp was not. It is possible that Ms.
+            Gaul was moved to hide her body or there may have been another
+            motivation we don't know about.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">The absence of defense wounds leads me to believe she was
+            unconscious before anyone began stabbing her or she became
+            unconscious very early in the stabbing.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I think she might have been unconscious when hit with (what appears
+            to be) a motorcycle chain, but I can't say for sure. I would expect
+            some marks on her hands (deflecting blows), but this is variable.
+            For example, if she deflected the blows with the palmer vs. the
+            dorsal surfaces of the hands they would be less likely to show
+            evidence of having been hit. Another
+            possibility is that she was conscious but her arms were restrained
+            by another person.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I am 
+				puzzled by the &quot;star-shaped&quot; wound and accompanying deep 
+				compression fracture. I have not been able to determine any 
+				object that might have caused that. (But I'm quite bad at 
+				pattern injury recognition.) I searched the web, but couldn't 
+				find anything that jogged my mind, either.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">
+				<a href="autop_gaul.html"><font color="#00FFFF">Back to Gaul 
+				Autopsy Report</font></a></font></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="autopsy_files.html#Gaul"><font face="Arial" size="2" color="#00FFFF">Back
+            to Autopsy Files</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="pertinent_info.html#Terps"><font face="Arial" size="2" color="#00FFFF">Back
+            to Pertinent Information</font></a></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+            <a name="Bennellack"></a>
+            	&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+            <font color="#FFFFFF" size="3" face="Times New Roman">- Nancy
+            Bennellack -</font></td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">In her job
+            with the Public defender's office did she ever have contact with
+            those being defended? It would be noteworthy if she ever did have
+            contact with any defendants.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I'm 
+				not clear about the significance of the masking tape. It's not 
+				obvious to me why they thought it was from the suspect's 
+				fingers. That wouldn't be my first thought, but then I'm 
+				assuming there's information not in the report which caused them 
+				to reach this conclusion.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">It seems to me that she fought (bruises on knuckles, elbows) and,
+            like Ms. Bates, probably left some lasting impressions (physical,
+            anyway) on her attacker.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">The serrated knife seems a bit unusual to me. I've seen them used in
+            domestic squabbles (fight over dinner with a steak knife close-by)
+            but almost all homicides I've seen have been with a non-serrated
+            blade. I believe this could have been a hunting knife.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I'm curious about the &quot;triangular&quot; stab wounds.&nbsp; It's
+            quite possible they were randomly formed from multiple stabs in
+            multiple directions. But it's difficult to say without a visual.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">Like many of the other victims, the face was slashed/stabbed
+            significantly. I believe the assailant knew the victim and was quite
+            angry.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">
+				<a href="autop_bennallack.html"><font color="#00FFFF">Back to 
+				Bennellack Autopsy Report</font></a></font></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="autopsy_files.html#Bennallack"><font face="Arial" size="2" color="#00FFFF">Back
+            to Autopsy Files</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="pertinent_info.html#Terps"><font face="Arial" size="2" color="#00FFFF">Back
+            to Pertinent Information</font></a></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+            <a name="Benedict"></a>
+            	&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+            <font color="#FFFFFF" size="3" face="Times New Roman">- Nikki
+            Benedict -</font></td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">This is
+            another victim embalmed prior to autopsy! (Ms. Jensen was also!)
+            This seems highly irregular to me and, per some of the older
+            pathologists at a friend's residency, it WAS highly irregular back
+            then as well.&nbsp;However, as this is the second case where this
+            occurred, perhaps it was more common in California (vs. Texas, where
+            my friend is in residency.) Another&nbsp; possibility is that police
+            didn't control the crime scenes or the bodies very well in either
+            case so they were embalmed prematurely. It certainly makes death
+            investigation trickier.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">I don't know that this was a personal attack. It does not appear to
+            be a &quot;rage&quot; killing. It appears to me that an attempt was
+            either made to slit Ms. Benedict's throat or subdue/scare her by
+            holding a knife to her throat.&nbsp;She appears to have fought back
+            (dirt on her leg, abrasions, etc.)</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">It appears the killer had a very short knife, but had experience in
+            killing as he knew exactly how to target the heart.&nbsp; The angle
+            from the xiphoid process superiorly, posteriorly, and to the left is
+            the <i>exact</i> tract we take to extract fluid from the sac around the
+            heart in pericardial tamponade (needle aspiration)! As the knife
+            only reached the pericardium, and not the heart, it appears that it
+            was fairly short, especially since the other wound demonstrated the
+            same finding (and there was evidence of it going in all the way to
+            the hilt/handle).</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">This murder appears quite different from the others, as the killer
+            didn't prolong a struggle...the murder was quick and efficient.
+            Also, the killer left before she was dead. That makes me think it
+            was more of a &quot;hit&quot; than a personal attack or the work of
+            a sadist (he didn't have the satisfaction of watching her die). Had
+            his blade been 1/2-1&quot; longer, she would have died almost
+            instantly. The only other reason I can see the killer leaving the
+            scene so quickly is if someone came close by and it spooked him. I
+            don't believe he struggled with Ms. Benedict long because there is
+            no mention of defense wounds on the victim.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">
+				<a href="autop_benedict.html"><font color="#00FFFF">Back to 
+				Benedict Autopsy Report</font></a></font></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="autopsy_files.html#Benedict"><font face="Arial" size="2" color="#00FFFF">Back
+            to Autopsy Files</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="pertinent_info.html#Terps"><font face="Arial" size="2" color="#00FFFF">Back
+            to Pertinent Information</font></a></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+            <a name="Tan"></a>
+            	&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">- Pat Tan -</font></td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" size="3" face="Times New Roman">The first thing about Ms. Tan's report that strikes me is there are no
+            glaring errors, inconsistencies, or unexplained comments in this report that I
+            noticed.  This is different from most of the other autopsy reports I've
+            reviewed on your site.  It appears to me the parties involved in this case
+            did a fine job.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">Suicide-by-hanging for females is less 
+				common than for males, but not unheard of. &nbsp;I've only seen 3 
+				cases involving females (strangely, they were all on the same 
+				day).</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">Ms. Tan appeared to be deeply depressed prior to her death (per her roommate),
+            which, of course could lead one to commit suicide.  However, one certainly
+            cannot rule out murder simply because the victim is depressed!</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">I don't know if the fact that Ms. Tan's feet were touching the ground is
+            significant or not . . . in my limited experience, I have seen this before in
+            cases of suicide.  I don't know about cases of homicide, as I've only seen
+            <i>strangulation</i>&nbsp; homicides and not <i>hanging</i> homicides.
+            One could argue that, if a victim is hanged against her will, and her feet reach the ground, she
+            could potentially get out of her predicament.  However, I don't know how
+            well that argument holds up in practice; we'd need to find a person with more
+            experience than I have to answer that question.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">Initially, I was surprised by the terrain at the location of the hanging.&nbsp;
+            It would require more effort to "set-up" on a steep incline.  However, it
+            would also be a lot easier to "step-off" than it would be on flat terrain.  The
+            location would have similar advantages/disadvantages if this were a case of
+            murder.  It would be difficult for the killer to "set it up," but easier to
+            drag a dead or unconscious body downhill than over flat terrain.  All this
+            being said, since I haven't actually been to the <i>exact</i> location or seen
+            any photos of the <i> exact</i> area where Tan was found, my mental image of the scene
+            might be significantly different from how it was.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">The braided "noose" surprised me: this is a great way to make a strong noose
+            that doesn't cut into the flesh as much as a single strand.  It's sturdier
+            and more effective at "strangling."  However, it takes forethought and
+            initiative to do this: two characteristics which are often lacking in a
+            severely depressed person.  That being said, were this a noose from a
+            "murder
+            kit" carried by a serial killer, I'd expect all three strands to be made of
+            the same material, rather than the haphazard pieces of cotton and electrical
+            cord.  Honestly, though, I could go either way . . . my best guess is Ms. Tan
+            simply understood physics (pressure as a function of force over area) and
+            applied that understanding to her noose.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">Two pieces of information seem to support the argument that Ms. Tan was
+            murdered.  First, the "abrasion"  on the left wrist and "superficial tissue
+            loss" on the dorsum of the left foot are consistent with being dragged, face
+            down, with uneven weight distribution (ie. on a steep hill or with one side
+            of the body supported more than the other as it's dragged.)  This could just
+            be coincidental: wounds she sustained while hiking prior to her death.  I do
+            wish I knew more about the "superficial tissue loss" on the left toes.
+             Since there was insect activity at this location, I don't know if the tissue loss
+            was caused by an abrasion or by hungry larvae.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF"face="Times New Roman" size="3">The other piece of information that is harder to explain is the multitude of
+            leaves and twigs found in Tan's hair.  Even at my clumsiest off-trail
+            hiking, I usually only come home with the slightest of forest flora tangled in my
+            hair.  She either spent extensive time with her head on the ground, and then
+            didn't bother to brush her hair off (possible) or she was dragged on the
+            ground (I see the second scenario as more likely for this specific topic,
+            but it doesn't fit with my overall impression that this was a suicide).</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF"face="Times New Roman" size="3">Originally, I thought the fact that the hyoid bone was intact was significant
+            evidence that this was a voluntary suicidal hanging.  I recall fracture of
+            the hyoid being associated with homicidal strangulation.  However, a quick
+            review of the literature shows that, while this is correct, it's not
+            anywhere near a definitive way to separate suicide from homicide.  This is especially
+            murky in younger people.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">To sum it up, I lean towards suicide, but I'm not sold on it being a
+            suicide.&nbsp; I can see why it was officially called a suicide, in the absence of any more
+            evidence otherwise.  But there are some unexplained pieces to this puzzle.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+            <p align="center">
+            <font size="2" color="#FF9933" face="Arial">After reading Dr. Norris's fine
+            report one is impressed (at certain junctures in her comments) how
+            that the Tan case can go either way - staged murder or suicide!</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font size="2" color="#FF9933" face="Arial">It is of interest that, what he
+            wrote in a card on the day Ms. Tan was found (04/20/70),&nbsp;
+            Zodiac's choice of words were, &quot;I hope you have fun trying to 
+				<i>FIGGURE
+            OUT WHO</i> I killed.&quot; (Emphasis ours.)</font></td>
+			</tr>
+			<tr>
+				<td>
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">
+				<a href="autop_tan.html"><font color="#00FFFF">Back to Tan 
+				Autopsy Report</font></a></font></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="autopsy_files.html#Tan"><font face="Arial" size="2" color="#00FFFF">Back
+            to Autopsy Files</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="pertinent_info.html#Terps"><font face="Arial" size="2" color="#00FFFF">Back
+            to Pertinent Information</font></a></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+            <a name="Stine"></a>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+            <font color="#FFFFFF" face="Times New Roman" size="3">- Paul Stine -</font></td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">The first issue I'd like to address in the
+            autopsy report relates to Mr. Stine's property. A victim's property
+            is generally inventoried prior to autopsy as it was in this case.
+            There is a discrepancy between the police report and the coroner's
+            report. The police report states, &quot;Crime lab's initial
+            investigation showed that the victim was devoid of any U.S.
+            Currency....&quot; However , the coroner's office found $4.12 in
+            change on Mr. Stine. I&nbsp; imagine the coins were either
+            overlooked by the crime lab or a typographical error occurred. It
+            should be noted that there are other, less likely, reasons for this
+            discrepancy that I will not delve into for the sake of brevity.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">If we take the coroner's report to be
+            correct this means that Zodiac took Stine's wallet but left quite a
+            bit of change. From a &quot;staged robbery&quot; perspective this
+            still makes sense since Zodiac fled on foot. Zodiac might not have
+            wanted the extra weight of all that change. He might also have
+            wanted to avoid the attention that jangling coins might draw.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">The coroner's report states that seven keys
+            were found in Mr. Stine's possession. However, the police report
+            states that the ignition key was taken. I am at a loss to explain
+            why Zodiac would take that specific key and not the others. I would
+            weakly speculate that perhaps it was taken because it was more
+            easily accessible (still in the ignition) or perhaps it was
+            important for Zodiac to &quot;link&quot; himself with the cab rather
+            than with Stine.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">In the coroner's report a summary of Mr.
+            Stine's body position at the crime scene is found. No mention is
+            made of the passenger door being left open. (This information was
+            not found in the police report either.)</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">As I (and other posters) have discussed on
+            the message board at ZodiacKiller.com, the coroner's report refers
+            to &quot;dark marks on the deceased's dorsal surface (back of) of
+            the left hand.&quot; While it can be speculated that these
+            &quot;dark marks&quot; refer to gunpowder residue, I do not believe
+            this to be the case. If this were the situation I would expect the
+            coroner to indicate so in his report rather than using the more
+            vague terminology we see. Similarly, I would expect him to identify
+            the marks as bruising - if that were the case. Unfortunately, no
+            other information is found in the report to suggest what the
+            &quot;dark marks&quot; are.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">The findings related to the gunshot wound
+            are not surprising. The bullet entered at the right temple. This is
+            where the anterior/superior (front and top) part or the ear is
+            attached to the head. The bullet trajectory was to the victim's left
+            and slightly anterior. The bullet came to rest in the muscle of the
+            left temple. The injury to the brain and the fracturing of the skull
+            were not unexpected given the weapon used and its proximity to
+            Stine's head. More discussion of this issue, including the expert
+            opinion of Bill Baker, can be found on the message board at
+            ZodiacKiller.com.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">The last issue I wish to discuss was a
+            finding in the coroner's report that I cannot yet resolve. Mr.
+            Stine's lungs were described as follows: &quot;Both lungs are
+            moderately increased in weight. There is congestion at the base and
+            dependant portions. Multiple intraparenchymal hemorrhages are
+            noted.&quot;&nbsp; The blood in the lungs does NOT appear to have
+            drained from the head wound. Were this the case the blood should be
+            in the lung air space rather than the parenchyma (which is the lung
+            tissue itself.) Additionally, the position of Stine's body (with the
+            head approximately at the level of the chest while in Zodiac's lap
+            and then below the level of the chest, on the floorboard after
+            Zodiac left the scene) would not be conducive to passive blood flow
+            from the head wound into the air space of he lungs.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">There are a few possible reasons for this
+            unexpected finding. First, some chronic illnesses can cause this
+            situation. We have no indication that Mr. Stine suffered from any
+            chronic illness associated with intraparenchymal hemorrhage. But I
+            would not expect most investigators to ask about this. It is also
+            possible that Mr. Stine was not aware he had an illness affecting
+            his lungs in this manner, though I believe this is unlikely.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">It is possible there was a typographical
+            error in the autopsy report. However, I doubt this to be the case
+            given the overall quality of the report.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">While I have not seen this myself, in
+            researching the topic I found brief mention of pulmonary
+            intraparenchymal hemorrhage with strangulation. I do not believe Mr.
+            Stine was strangled, however, as there are no other findings in the
+            autopsy that indicate this to be the case.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">Lastly, it is possible for blunt force
+            trauma of the chest to cause this intraparenchymal bleeding. As both
+            lungs were involved, this blunt force trauma would have to have
+            occurred on both sides of Mr. Stine's chest. There was no mention of
+            other finding that would support this conclusion (such as bruising
+            of the skin or broken ribs) but it is possible for blunt force
+            trauma to occur without these additional findings.</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><font color="#FFFFFF" face="Times New Roman" size="3">I hope to receive input from a pathologist
+            on the intraparenchymal hemorrhage of the lung as I do not have the
+            experience or the training to confidently state its likely cause.</font></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b><font face="Arial" size="2" color="#00FFFF">
+				<a href="autop_stine.html"><font color="#00FFFF">Back to Stine 
+				Autopsy Report</font></a></font></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt"><b>
+				<a href="autopsy_files.html#Stine"><font face="Arial" size="2" color="#00FFFF">Back
+            to Autopsy Files</font></a><font face="Arial" size="2" color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="pertinent_info.html#Terps"><font face="Arial" size="2" color="#00FFFF">Back
+            to Pertinent Information</font></a></b></span></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><font face="Arial" size="2" color="#00FFFF">
+				_________________________________________</font></td>
+			</tr>
+			<tr>
+				<td>
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center"><span style="mso-bidi-font-size: 10.0pt">
+				<a href="#Top"><font face="Arial" size="2" color="#00FFFF"><b>Top
+            of page</b></font></a></span></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+	</TD></TR>
+  </TBODY></TABLE></DIV>
+  
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=7144748; 
+var sc_invisible=1; 
+var sc_security="b6ee11ab"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="hits counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7144748/0/b6ee11ab/1/"
+alt="hits counter" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</BODY></HTML>

@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /audio/
+Disallow: /buttons/
+Disallow: /flags_static/
+Disallow: /grids/
+Disallow: /maps/
+Disallow: /private/
+Disallow: /_vti_cnf/
+Disallow: /_vti_pvt/
+Crawl-delay: 10
