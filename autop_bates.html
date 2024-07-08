@@ -2,10 +2,10 @@
 <HTML><HEAD><TITLE>TZMC - Bates Autopsy</TITLE>
 <SCRIPT language=JavaScript>
 <!-- http://www.spacegun.co.uk -->
-	var message = "Right-click is disabled. The information on this site is Copyright © 1987-2012."; 
+	var message = "Right-click is disabled. The information on this site is Copyright ï¿½ 1987-2012."; 
 	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
 	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
-	document.onmousedown = rtclickcheck;
+	//document.onmousedown = rtclickcheck;
 
 function FP_swapImg() {//v1.0
  var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
@@ -233,13 +233,13 @@ name=keywords>
   </TBODY></TABLE></DIV>
 
 <rule name ="Prevent image hotlinking" />
-<match url=”.*.(jpg|jpeg|png|gif|bmp)$” />
+<match url=ï¿½.*.(jpg|jpeg|png|gif|bmp)$ï¿½ />
 <conditions>
-<add input=”{HTTP_REFERER}” pattern=”^$” negate=”true” />
-<add input=”{HTTP_REFERER}” pattern=”http://thezodiacmansonconnection.com/.*$” negate=”true” />
-<add input=”{HTTP_REFERER}” pattern=”http://www.thezodiacmansonconnection.com/.*$” negate=”true” />
+<add input=ï¿½{HTTP_REFERER}ï¿½ pattern=ï¿½^$ï¿½ negate=ï¿½trueï¿½ />
+<add input=ï¿½{HTTP_REFERER}ï¿½ pattern=ï¿½http://thezodiacmansonconnection.com/.*$ï¿½ negate=ï¿½trueï¿½ />
+<add input=ï¿½{HTTP_REFERER}ï¿½ pattern=ï¿½http://www.thezodiacmansonconnection.com/.*$ï¿½ negate=ï¿½trueï¿½ />
 </conditions>
-<action type=”Rewrite” url=”http://altlab.com/hotlink.gif“ appendQueryString=”false” />
+<action type=ï¿½Rewriteï¿½ url=ï¿½http://altlab.com/hotlink.gifï¿½ appendQueryString=ï¿½falseï¿½ />
 </rule>
 
 <!-- Start of StatCounter Code -->
