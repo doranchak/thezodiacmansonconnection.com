@@ -555,16 +555,6 @@ color:#333333"><font face="Arial" size="2" color="#FF9933">
 	</TD></TR>
   </TBODY></TABLE></DIV>
     
-<rule name ="Prevent image hotlinking" />
-<match url=�.*.(jpg|jpeg|png|gif|bmp)$� />
-<conditions>
-<add input=�{HTTP_REFERER}� pattern=�^$� negate=�true� />
-<add input=�{HTTP_REFERER}� pattern=�http://thezodiacmansonconnection.com/.*$� negate=�true� />
-<add input=�{HTTP_REFERER}� pattern=�http://www.thezodiacmansonconnection.com/.*$� negate=�true� />
-</conditions>
-<action type=�Rewrite� url=�http://altlab.com/hotlink.gif� appendQueryString=�false� />
-</rule>
-
 <!-- Start of StatCounter Code -->
 <script type="text/javascript">
 var sc_project=7144748; 
