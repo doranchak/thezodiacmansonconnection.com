@@ -34,3 +34,4 @@ Pages that still have broken/missing content:  (note: Older snapshots of some pa
 * https://doranchak.github.io/thezodiacmansonconnection.com/washed_pen_card.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/zelms_related.html
 
+Dave's note:  Using this command to find encoding problems on Mac:  `ggrep --color='auto' -P -n '[^\x00-\x7F]' *.html`
