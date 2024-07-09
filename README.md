@@ -20,9 +20,7 @@ Pages that still have broken/missing content:  (note: Older snapshots of some pa
 * https://doranchak.github.io/thezodiacmansonconnection.com/guest_book_signature.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/howard_davis_notarized_statement.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/judith_davis_ward_letter.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/lass_related.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/links.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/mellin_newspaper_articles.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/victim_benedict.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/victim_gaul_sharp.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/victim_habe.html

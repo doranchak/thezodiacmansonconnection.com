@@ -22,16 +22,6 @@ function FP_preloadImgs() {//v1.0
 }
 </SCRIPT>
 
-<rule name ="Prevent image hotlinking" >
-<match url=�.*.(jpg|jpeg|png|gif|bmp)$� />
-<conditions>
-<add input=�{HTTP_REFERER}� pattern=�^$� negate=�true� />
-<add input=�{HTTP_REFERER}� pattern=�http://thezodiacmansonconnection.com/.*$� negate=�true� />
-<add input=�{HTTP_REFERER}� pattern=�http://www.thezodiacmansonconnection.com/.*$� negate=�true� />
-</conditions>
-<action type=�Rewrite� url=�http://altlab.com/hotlink.gif� appendQueryString=�false� />
-</rule>
-
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <meta name="description" content="Find out the shocking truth behind the murders of the Zodiac serial killer, as Howard A. Davis, Ph.D. reveals the Charles Manson family connection.  Discover the reality behind the gruesome murders in the 1960's">
 <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
@@ -379,7 +369,7 @@ function FP_preloadImgs() {//v1.0
           <tr>
             <td width="550" colspan="3">
               <p align="center"><font face="Arial" size="2" color="#00FFFF">
-				Copyright � 
+				Copyright © 
 				1987-2013</font></td>
           </tr>
           <tr>
