@@ -8,8 +8,6 @@ Pages that still have broken/missing content:  (note: Older snapshots of some pa
 * https://doranchak.github.io/thezodiacmansonconnection.com/2008_manson_letter_to_ava_editor.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/Howard_Davis_VSA_test.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/anaheim_riverside.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/autop_habe.html
-* https://doranchak.github.io/thezodiacmansonconnection.com/autop_jensen.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/autop_tan.html   (one image says hotlinked)
 * https://doranchak.github.io/thezodiacmansonconnection.com/benedict_pic.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/birds_fly_south.html
