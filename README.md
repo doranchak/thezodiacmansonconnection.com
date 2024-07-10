@@ -12,10 +12,10 @@ Pages that still have broken/missing content:  (note: Older snapshots of some pa
 * https://doranchak.github.io/thezodiacmansonconnection.com/benedict_pic.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/birds_fly_south.html
   * I restored the images for this page, but am not 100% sure they match the originals.
-* https://doranchak.github.io/thezodiacmansonconnection.com/car_abductions.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/cm_ava_letter_to_editor.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/coroners_report_roberts.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/crockett_merrick.html
+  * I substituted a different article for the original one that was here.  The original article has not yet been located.
 * https://doranchak.github.io/thezodiacmansonconnection.com/ferrin_mageau_related.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/guest_book_signature.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/howard_davis_notarized_statement.html
