@@ -18,6 +18,7 @@ Pages that still have broken/missing content:  (note: Older snapshots of some pa
   * I substituted a different article for the original one that was here.  The original article has not yet been located.
 * https://doranchak.github.io/thezodiacmansonconnection.com/ferrin_mageau_related.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/guest_book_signature.html
+  * The ebay image was missing so we reconstructed it based on the old email.  The maps were missing so I created new ones from other sources.
 * https://doranchak.github.io/thezodiacmansonconnection.com/howard_davis_notarized_statement.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/judith_davis_ward_letter.html
 * https://doranchak.github.io/thezodiacmansonconnection.com/links.html
